@@ -1,0 +1,76 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3000;
+    background-color: $clr-wah;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+
+    .container {
+        height: calUni(70px);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &--logo {
+        width: calUni(145px);
+    }
+
+    &--content {
+        .nav-btn {
+            font-size: 1.75rem;
+            color: $clr-bluewood;
+            margin: 0 calUni(16px);
+
+            &:nth-child(3){
+                margin-right: 0;
+            }
+        }
+    }
+
+    &--form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: calUni(527px);
+        height: calUni(40px);
+        position: relative;
+        margin: 0 16px;
+
+        
+
+        input {
+            width: 100%;
+            height: 100%;
+            border: 1px solid $clr-eastbay;
+            border-radius: 3px;
+            outline: none;
+            transition: all 200ms ease;
+            font-family: $font-heading;
+            text-indent: 5px;
+            color: $clr-eastbay;
+
+            &:focus {
+                border-color: $clr-trinidad;
+            }
+        }
+
+        button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: calUni(50px);
+            height: 100%;
+            color: $clr-wah;
+            background-color: $clr-eastbay;
+            border-radius: 0px 3px 3px 0px;
+        }
+    }
+}
+
+input::-webkit-calendar-picker-indicator {
+    display: none !important;
+  }
+  

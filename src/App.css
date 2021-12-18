@@ -1,0 +1,429 @@
+/*  
+======================================== 
+
+Color variables
+
+Color palette
+#E05400 - Trinidad
+#3D507B - East Bay
+    
+========================================  
+*/
+/*  
+======================================== 
+
+Font family
+    
+========================================  
+*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap");
+/*  
+======================================== 
+
+CSS Reset
+    
+========================================  
+*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*  
+======================================== 
+
+Utility classes
+    
+========================================  
+*/
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.visible-none {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.visible-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*  
+======================================== 
+
+Apply theme
+    
+========================================  
+*/
+.container {
+  padding: 0 1.25rem;
+  max-width: 90rem;
+  margin: auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3000;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbar .container {
+  height: 4.375rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar--logo {
+  width: 9.0625rem;
+}
+
+.navbar--content .nav-btn {
+  font-size: 1.75rem;
+  color: #2F4858;
+  margin: 0 1rem;
+}
+
+.navbar--content .nav-btn:nth-child(3) {
+  margin-right: 0;
+}
+
+.navbar--form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32.9375rem;
+  height: 2.5rem;
+  position: relative;
+  margin: 0 16px;
+}
+
+.navbar--form input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #3D507B;
+  border-radius: 3px;
+  outline: none;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  font-family: "Nunito", sans-serif;
+  text-indent: 5px;
+  color: #3D507B;
+}
+
+.navbar--form input:focus {
+  border-color: #E05400;
+}
+
+.navbar--form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3.125rem;
+  height: 100%;
+  color: #ffffff;
+  background-color: #3D507B;
+  border-radius: 0px 3px 3px 0px;
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(61, 80, 123, 0.2);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(61, 80, 123, 0.8);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2955;
+  background-color: #ffffff;
+  width: 13.75rem;
+  height: 100%;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow-y: scroll;
+}
+
+.sidebar--wrapper {
+  margin-top: 4.375rem;
+  padding: 20px 10px 20px 20px;
+}
+
+.sidebar--category .category-list {
+  color: #55433B;
+  font-size: 1.125rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  list-style-type: none;
+}
+
+.sidebar--category .category-list .category-item {
+  margin: 5px 0;
+  border-radius: 5px;
+  -webkit-transition: all 100ms ease-out;
+  transition: all 100ms ease-out;
+  padding: 1.5px 20px;
+  cursor: pointer;
+}
+
+.sidebar--category .category-list .category-item.active {
+  background-color: #55433B;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sidebar--tag .tag-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.sidebar--tag .tag-list .tag-item {
+  background-color: #C4FCF0;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.sidebar--tag .tag-list .tag-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 2px 10px;
+}
+
+.mainSection {
+  width: 100%;
+  height: 200vh;
+  padding-left: 13.75rem;
+  padding-top: 4.375rem;
+}
+
+.mainSection .card-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding-top: 1.25rem;
+}
+
+.mainSection .card-grid .cardSection {
+  height: 100%;
+  max-height: 21.25rem;
+  padding: 0.9375rem;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+          box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+.mainSection .card-grid .cardSection--image {
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  margin-bottom: 0.75rem;
+}
+
+.mainSection .card-grid .cardSection--image .image-text {
+  color: #ffffff;
+  text-align: center;
+  padding: 0 10px;
+  letter-spacing: 10px;
+}
+
+.mainSection .card-grid .cardSection--image .tags {
+  position: absolute;
+  font-size: 1px;
+  visibility: hidden;
+}
+
+.mainSection .card-grid .cardSection:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  background-color: #C4FCF0;
+}
+
+.mainSection .card-grid .cardSection:hover .cardSection--image {
+  background-size: 112%;
+}
+
+.mainSection .card-grid .cardSection--name {
+  font-family: "Nunito", sans-serif;
+  color: #3D507B;
+}
+
+.mainSection .card-grid .cardSection--title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #55433B;
+}
+
+.mainSection .card-grid .cardSection--desc {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #55433B;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+/*# sourceMappingURL=App.css.map */

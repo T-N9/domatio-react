@@ -1,0 +1,82 @@
+.mainSection {
+    width: 100%;
+    height: 200vh;
+    padding-left: calUni(220px);
+    padding-top: calUni(70px);
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        padding-top: calUni(20px);
+        
+        .cardSection {
+            height: 100%;
+            max-height: calUni(340px);
+            padding: calUni(15px);
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            transition: all 200ms ease-out;
+
+            &--image{
+                width: 100%;
+                height: 200px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                transition: all 200ms ease;
+                margin-bottom: 0.75rem;
+
+                .image-text {
+                    color: $clr-wah;
+                    text-align: center;
+                    padding: 0 10px;
+                    letter-spacing: 10px;
+                }
+
+                .tags{
+                    position: absolute;
+                    font-size: 1px;
+                    visibility: hidden;
+                }
+            }
+
+            &:hover {
+                transform: translateY(-5px);
+                background-color: $clr-foam;
+
+                .cardSection--image {
+                    background-size: 112%;
+                }
+                
+            }
+
+            &--name {
+                font-family: $font-heading;
+                color: $clr-eastbay;
+            }
+
+            &--title {
+                font-family: $font-para;
+                font-weight: 400;
+                color: $clr-kabul;
+            }
+
+            &--desc {
+                font-family: $font-para;
+                font-weight: 400;
+                color: $clr-kabul;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3; /* number of lines to show */
+                        line-clamp: 3; 
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+}
