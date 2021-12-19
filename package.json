@@ -13,6 +13,7 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
+  "homepage": "https://t-n9.github.io/domatio-production/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

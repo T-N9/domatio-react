@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { CategoryIdContext } from "../../App";
 
-const SideBar = (props) => {
+const SideBar = () => {
 
     const { categoryId, setCategoryId} = useContext(CategoryIdContext);
-    console.log("Context " +categoryId);
+    // console.log("Context " +categoryId);
 
     const categoryArray = [
         {
@@ -69,7 +69,6 @@ const SideBar = (props) => {
             { ...item, active: item.active ? true : !item.active} : { ...item, active: item.active && false};
         }))
 
-        
         console.log(name);
     }
 
@@ -77,7 +76,6 @@ const SideBar = (props) => {
     function handleClick (name, id) {
         setCategoryId(id)
         handleCateActive(name);
-        props.filterData();
 
         console.log(name, id)
     }
@@ -94,7 +92,7 @@ const SideBar = (props) => {
     })
 
     return (
-        <aside className="sidebar">
+        <aside className="sidebar hide-on-mobile">
             <div className="sidebar--wrapper">
                 <section className="sidebar--category">
                     <small className="section-name">

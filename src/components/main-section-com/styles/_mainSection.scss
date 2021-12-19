@@ -1,14 +1,26 @@
 .mainSection {
     width: 100%;
-    height: 200vh;
     padding-left: calUni(220px);
     padding-top: calUni(70px);
+
+    @include m-breakpoint-down(large){
+        padding-left: 0;
+    }
 
     .card-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1rem;
-        padding-top: calUni(20px);
+        padding-top: calUni(20px) ;
+        padding-bottom: calUni(20px) ;
+
+        @include m-breakpoint-down(large){
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include m-breakpoint-down(small){
+            grid-template-columns: repeat(1, 100%);
+        }
         
         .cardSection {
             height: 100%;
@@ -17,6 +29,7 @@
             border-radius: 5px;
             box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
             transition: all 200ms ease-out;
+            user-select: none;
 
             &--image{
                 width: 100%;

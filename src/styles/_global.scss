@@ -107,6 +107,18 @@ Utility classes
   opacity: 1;
   visibility: visible;
 }
+
+.hide-on-mobile {
+  @include m-breakpoint-down(large) {
+    display: none;
+  }
+}
+
+.hide-on-desktop {
+  @include m-breakpoint-up(xlarge){
+    display: none;
+  }
+}
 /*  
 ======================================== 
 

@@ -39,7 +39,17 @@
         position: relative;
         margin: 0 16px;
 
-        
+        @include m-breakpoint-down(large){
+            width: 17.9375rem;
+        }
+
+        @include m-breakpoint-down(small){
+            position: absolute;
+            left: 50%;
+            top: 80px;
+            transform: translateX(-50%);
+            margin: 0;
+        }
 
         input {
             width: 100%;

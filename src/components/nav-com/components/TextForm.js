@@ -5,19 +5,18 @@ import { DataContext } from "../../../App";
 const TextForm = () => {
 
     const [input , setInput] = React.useState("");
-    const data_list = useContext(DataContext);
-    let data_count = 0;
-    let data_options = Object.entries(data_list).map(data => {
-        data_count++;
-        return <option key={data_count} value={data[1].name}>{data[1].name}</option>
-    });
+    // const data_list = useContext(DataContext);
+    // let data_count = 0;
+    // let data_options = Object.entries(data_list).map(data => {
+    //     data_count++;
+    //     return <option key={data_count} value={data[1].name}>{data[1].name}</option>
+    // });
 
     let cardClasses;
 
     function handleChange(e) {
         cardClasses = Array.from(document.getElementsByClassName('cardSection'));
         setInput(e.target.value);
-        // e.preventDefault();
 
         Object.entries(cardClasses).filter(item => {
             item[1].textContent.toLowerCase().indexOf(e.target.value.toLowerCase()) > -1  ?  
@@ -42,15 +41,15 @@ const TextForm = () => {
                 type="text"
                 placeholder="Enter a tag or name"
                 id="search-data"
-                list="data-list"
+                // list="data-list"
+                autoComplete="off"
                 onChange={handleChange}
                 value={input}
-
             />
 
-            <datalist id="data-list">
+            {/* <datalist id="data-list">
                 {data_options}
-            </datalist>
+            </datalist> */}
             <button>
                 <LineIcon name="search-alt" />
             </button>
