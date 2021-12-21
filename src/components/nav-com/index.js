@@ -7,7 +7,7 @@ const NavBar = () => {
     return (
         <nav className="navbar">
             <div className="container d-flex">
-                <a href="www.google.com">
+                <a href="/">
                     <img className="navbar--logo" src={logo} alt="domatio-logo" />
                 </a>
                 

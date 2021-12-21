@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import { CategoryIdContext } from "../../App";
+import { CategoryTagContext } from "../../App";
 
 const SideBar = () => {
 
-    const { categoryId, setCategoryId} = useContext(CategoryIdContext);
+    const { categoryId, setCategoryId , tagName, setTagName} = useContext(CategoryTagContext);
     // console.log("Context " +categoryId);
 
     const categoryArray = [
@@ -59,7 +59,7 @@ const SideBar = () => {
         }
     ]
 
-    const TagArray = [ "free", "myanmar", "background", "design", "svg", "generator", "premium", "frontend", "ui ux", "graphic design"]
+    const TagArray = [ "free", "myanmar", "background", "design", "SVG", "generator", "premium", "frontend", "ui ux", "graphic design"]
 
     const [activeCate, setActiveCate ] = React.useState(categoryArray)
 
@@ -74,21 +74,32 @@ const SideBar = () => {
 
 
     function handleClick (name, id) {
-        setCategoryId(id)
+        setCategoryId(id);
         handleCateActive(name);
+        setTagName("");
+        // console.log(name, id);
+    }
 
-        console.log(name, id)
+    function changeTagName (name) {
+        setTagName(name)
     }
 
     const categoryList = activeCate.map( category => {
-        return <li 
-        key={category.name} 
-        onClick={ () => handleClick(category.name, category.id) } 
-        className={category.active ? "category-item active" : "category-item"}>{category.name}</li> 
+        return (
+            <li 
+            key={category.id} 
+            onClick={ () => handleClick(category.name, category.id) } 
+            className={category.active ? "category-item active" : "category-item"}>
+                <a href="#up">
+                    {category.name}
+                </a>
+            </li>
+        ) 
     })
 
+
     const tagList = TagArray.map( tag => {
-        return <li key={tag} className="tag-item"><a href="www.google.com">{tag}</a></li>
+        return <li key={tag} onClick={() => changeTagName(tag)} className="tag-item"><a href="#up">{tag}</a></li>
     })
 
     return (
