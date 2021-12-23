@@ -119,6 +119,16 @@ Utility classes
     display: none;
   }
 }
+
+.only-on-small {
+  @include m-breakpoint-up(medium){
+    display: none;
+  }
+}
+
+.mr-0 {
+  margin-right: 0 !important;
+}
 /*  
 ======================================== 
 

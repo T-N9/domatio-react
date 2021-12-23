@@ -68,6 +68,22 @@ background: rgba($clr-eastbay, 0.8);
         color: $clr-kabul;
     }
 
+    &--toggle {
+        position: fixed;
+        z-index: 6000;
+        top: 75px;
+        left: 0px;
+        color: $clr-trinidad;
+        background-color: $clr-wah;
+        padding: 5px 15px;
+        border-radius: 0 10px 10px 0px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+        &.active {
+            left: calUni(220px);
+        }
+    }
+
     &--tag {
         .tag-list {
             list-style-type: none;

@@ -7,83 +7,80 @@ import { CategoryTagContext } from "../../App";
 const MainSection = () => {
     const data_list = useContext(DataContext);
     const [cardData, setCardData ] = useState("");
-    const { categoryId, tagName, setTagName } = useContext(CategoryTagContext);
+    const { categoryId, tagName } = useContext(CategoryTagContext);
     // let headerText;
-    function withoutTagCall() {
-        categoryId === 0 ?
-        setCardData(
-            Object.entries(data_list).map(data => {
-                return (
-                    <Card 
-                        key = {nanoid()}
-                        name = {data[1].name}
-                        title = {data[1].title}
-                        image = {data[1].image}
-                        desc = {data[1].desc}
-                        link = {data[1].link}
-                        tags = {data[1].tags}
-                    />
-                )
-            })
-        )
-        :
-        setCardData(
-            Object.entries(data_list).filter(data => data[1].category.includes(categoryId)).map(data => {
-                return (
-                    <Card 
-                        key = {nanoid()}
-                        name = {data[1].name}
-                        title = {data[1].title}
-                        image = {data[1].image}
-                        desc = {data[1].desc}
-                        link = {data[1].link}
-                        tags = {data[1].tags}
-                    />
-                )
-            })
-        );
-
-        console.log("Without Tag called");
-    }
-
-    function tagFilterCall() {
-        categoryId === 0 ?
-        setCardData(
-            Object.entries(data_list).filter(data => data[1].tags.includes(tagName)).map(data => {
-                return (
-                    <Card 
-                        key = {nanoid()}
-                        name = {data[1].name}
-                        title = {data[1].title}
-                        image = {data[1].image}
-                        desc = {data[1].desc}
-                        link = {data[1].link}
-                        tags = {data[1].tags}
-                    />
-                )
-            })
-        )
-        :
-        setCardData(
-            Object.entries(data_list).filter(data => data[1].category.includes(categoryId) && data[1].tags.includes(tagName)).map(data => {
-                return (
-                    <Card 
-                        key = {nanoid()}
-                        name = {data[1].name}
-                        title = {data[1].title}
-                        image = {data[1].image}
-                        desc = {data[1].desc}
-                        link = {data[1].link}
-                        tags = {data[1].tags}
-                    />
-                )
-            })
-        );
-
-        console.log(cardData, "Tag called");
-    }
 
     useEffect(() => {
+        function withoutTagCall() {
+            categoryId === 0 ?
+            setCardData(
+                Object.entries(data_list).map(data => {
+                    return (
+                        <Card 
+                            key = {nanoid()}
+                            name = {data[1].name}
+                            title = {data[1].title}
+                            image = {data[1].image}
+                            desc = {data[1].desc}
+                            link = {data[1].link}
+                            tags = {data[1].tags}
+                        />
+                    )
+                })
+            )
+            :
+            setCardData(
+                Object.entries(data_list).filter(data => data[1].category.includes(categoryId)).map(data => {
+                    return (
+                        <Card 
+                            key = {nanoid()}
+                            name = {data[1].name}
+                            title = {data[1].title}
+                            image = {data[1].image}
+                            desc = {data[1].desc}
+                            link = {data[1].link}
+                            tags = {data[1].tags}
+                        />
+                    )
+                })
+            );
+        }
+    
+        function tagFilterCall() {
+            categoryId === 0 ?
+            setCardData(
+                Object.entries(data_list).filter(data => data[1].tags.includes(tagName)).map(data => {
+                    return (
+                        <Card 
+                            key = {nanoid()}
+                            name = {data[1].name}
+                            title = {data[1].title}
+                            image = {data[1].image}
+                            desc = {data[1].desc}
+                            link = {data[1].link}
+                            tags = {data[1].tags}
+                        />
+                    )
+                })
+            )
+            :
+            setCardData(
+                Object.entries(data_list).filter(data => data[1].category.includes(categoryId) && data[1].tags.includes(tagName)).map(data => {
+                    return (
+                        <Card 
+                            key = {nanoid()}
+                            name = {data[1].name}
+                            title = {data[1].title}
+                            image = {data[1].image}
+                            desc = {data[1].desc}
+                            link = {data[1].link}
+                            tags = {data[1].tags}
+                        />
+                    )
+                })
+            );
+        }
+    
 
         withoutTagCall();
 

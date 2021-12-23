@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
 import LineIcon from "react-lineicons";
-import { DataContext } from "../../../App";
+import { searchContext } from "..";
 
 const TextForm = () => {
 
     const [input , setInput] = React.useState("");
+    const { searchToggle } = useContext(searchContext);
     // const data_list = useContext(DataContext);
     // let data_count = 0;
     // let data_options = Object.entries(data_list).map(data => {
@@ -35,8 +36,12 @@ const TextForm = () => {
         // });
     }
 
+    function handleSubmit (e) {
+        e.preventDefault();
+    }
+
     return (
-        <form action="" className="navbar--form">
+        <form action="" className={ searchToggle ? "navbar--form search-active" : "navbar--form search-hidden"} onSubmit={handleSubmit}>
             <input
                 type="text"
                 placeholder="Enter a tag or name"
