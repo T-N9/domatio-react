@@ -1,22 +1,16 @@
-// import React, {useState, useEffect} from "react";
+import React from "react";
+import illustration  from '../../../images/no-item.svg';
 
-// const NoItem = (props) => {
+const NoItem = (props) => {
 
-//     let count =1;
-//     if(props.height === 40){
-//         count++;
-//         console.log( props.height,count);
-//     }
-//     return(
-//         <>
-//             <div className={props.height > 40 ? "d-none" : ""}>
-//                 <h1>Not Found</h1>
-//             </div>
-//             <div className={props.height === 0 ? "" : "d-none"}>
-//             <h1>Loading</h1>
-//             </div>
-//         </>
-//     )
-// }
+    return(
+        <>
+            <div className={props.data === 0 ? "no-item-page d-block":"no-item-page d-none"}>
+                <h1>No Item Found !</h1>
+                <img src={illustration} alt="No item found" />
+            </div>
+        </>
+    )
+}
 
-// export default NoItem;
+export default NoItem;

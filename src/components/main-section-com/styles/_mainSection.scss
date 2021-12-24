@@ -8,6 +8,7 @@
     background-color: $clr-wah;
     color: $clr-trinidad;
     font-size: 2.5rem;
+    transition: all 200ms ease;
 
     @include flex-center;
 
@@ -15,6 +16,30 @@
         animation: spinning 1.5s linear infinite;
     }
  
+}
+
+.no-item-page {
+    @include flex-center;
+    padding: 2.5rem;
+    padding-top: 3rem;
+    flex-direction: column;
+
+    h1 {
+        font-family: $font-heading;
+        color: $clr-eastbay;
+        font-weight: 700;
+        margin-bottom: -40px;
+        font-style: italic;
+        font-size: 2.125rem;
+    }
+
+    img {
+        width: 30%;
+
+        @include m-breakpoint-down(small) {
+            width: 100%;
+        }
+    }
 }
 
 .mainSection {

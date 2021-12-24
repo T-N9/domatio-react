@@ -1,6 +1,7 @@
 import React, { useContext, useState , useEffect } from "react";
 import { nanoid } from "nanoid";
 import Card from "./components/Card";
+import NoItem from "./components/NoItem";
 import { DataContext } from "../../App";
 import { CategoryTagContext } from "../../App";
 
@@ -85,8 +86,6 @@ const MainSection = () => {
         if(tagName !== "") {
             tagFilterCall();
         }
-
-        console.log(cardData);
     },[categoryId, tagName, data_list]);
 
     // switch (categoryId) {
@@ -114,7 +113,7 @@ const MainSection = () => {
         <section className="mainSection">
             <div className="mainSection--header">
             </div>
-            <h1 className={cardData.length === 0 ? "d-block" : "d-none"}> No item </h1>
+            <NoItem data={cardData.length}/>
             <div className="container card-grid">
                 {cardData}
             </div>

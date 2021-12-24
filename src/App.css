@@ -511,6 +511,8 @@ input::-webkit-calendar-picker-indicator {
   background-color: #ffffff;
   color: #E05400;
   font-size: 2.5rem;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,6 +527,43 @@ input::-webkit-calendar-picker-indicator {
 .loading-content .loading-icon {
   -webkit-animation: spinning 1.5s linear infinite;
           animation: spinning 1.5s linear infinite;
+}
+
+.no-item-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.5rem;
+  padding-top: 3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.no-item-page h1 {
+  font-family: "Nunito", sans-serif;
+  color: #3D507B;
+  font-weight: 700;
+  margin-bottom: -40px;
+  font-style: italic;
+  font-size: 2.125rem;
+}
+
+.no-item-page img {
+  width: 30%;
+}
+
+@media (max-width: 35.9375em) {
+  .no-item-page img {
+    width: 100%;
+  }
 }
 
 .mainSection {
