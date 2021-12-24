@@ -44,7 +44,7 @@ const TextForm = () => {
         <form action="" className={ searchToggle ? "navbar--form search-active" : "navbar--form search-hidden"} onSubmit={handleSubmit}>
             <input
                 type="text"
-                placeholder="Enter a tag or name"
+                placeholder="Enter a name or tag"
                 id="search-data"
                 // list="data-list"
                 autoComplete="off"

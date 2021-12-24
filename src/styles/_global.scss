@@ -91,7 +91,7 @@ Utility classes
 */
 
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 .d-flex {

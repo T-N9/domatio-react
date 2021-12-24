@@ -8,7 +8,6 @@ const MainSection = () => {
     const data_list = useContext(DataContext);
     const [cardData, setCardData ] = useState("");
     const { categoryId, tagName } = useContext(CategoryTagContext);
-    // let headerText;
 
     useEffect(() => {
         function withoutTagCall() {
@@ -80,7 +79,6 @@ const MainSection = () => {
                 })
             );
         }
-    
 
         withoutTagCall();
 
@@ -88,7 +86,7 @@ const MainSection = () => {
             tagFilterCall();
         }
 
-
+        console.log(cardData);
     },[categoryId, tagName, data_list]);
 
     // switch (categoryId) {
@@ -115,10 +113,8 @@ const MainSection = () => {
     return (
         <section className="mainSection">
             <div className="mainSection--header">
-                {/* <div className="container">
-                    <h1>{headerText}</h1>
-                </div> */}
             </div>
+            <h1 className={cardData.length === 0 ? "d-block" : "d-none"}> No item </h1>
             <div className="container card-grid">
                 {cardData}
             </div>

@@ -48,6 +48,7 @@
 
         @include m-breakpoint-down(small){
             opacity: 0;
+            visibility: hidden;
             transform: translateX(-50%) translateY(-30px);
         }
         
@@ -57,6 +58,7 @@
 
         @include m-breakpoint-down(small) {
             opacity: 1;
+            visibility: visible;
             transform: translateX(-50%) translateY(0px);
         }
         

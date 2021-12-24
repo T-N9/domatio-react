@@ -6,7 +6,6 @@ const SideBar = () => {
 
     const [ sideToggle, setSideToggle ] = useState(false);
     const { setCategoryId, setTagName } = useContext(CategoryTagContext);
-    // console.log("Context " +categoryId);
 
     const categoryArray = [
         {
@@ -63,7 +62,7 @@ const SideBar = () => {
 
     const TagArray = ["free", "myanmar", "background", "design", "SVG", "generator", "premium", "frontend", "ui ux", "graphic design"]
 
-    const [activeCate, setActiveCate] = React.useState(categoryArray)
+    const [activeCate, setActiveCate] = useState(categoryArray)
 
     function handleCateActive(name) {
         setActiveCate(cate => cate.map(item => {
@@ -77,8 +76,6 @@ const SideBar = () => {
         setCategoryId(id);
         handleCateActive(name);
         setTagName("");
-        // console.log(name, id);
-        sidebarToggle();
     }
 
     function changeTagName(name) {
@@ -110,10 +107,11 @@ const SideBar = () => {
 
     return (
         <>
+            <div onClick={sidebarToggle} className={ sideToggle ? "sidebar--overlay hide-on-desktop active" : "sidebar--overlay hide-on-desktop"}></div>
             <button onClick={sidebarToggle} className={ sideToggle ? "sidebar--toggle hide-on-desktop active" : "sidebar--toggle hide-on-desktop "}>
                 <LineIcon name="radio-button" />
             </button>
-            <aside className={ sideToggle ? "sidebar" : "sidebar hide-on-mobile"}>
+            <aside className={ sideToggle ? "sidebar active-mobile" : "sidebar hidden-mobile"}>
                 <div className="sidebar--wrapper">
 
                     <section className="sidebar--category">

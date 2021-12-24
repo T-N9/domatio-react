@@ -17,6 +17,27 @@ Font family
 ========================================  
 */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap");
+@-webkit-keyframes spinning {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spinning {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 /*  
 ======================================== 
 
@@ -110,7 +131,7 @@ Utility classes
 ========================================  
 */
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 .d-flex {
@@ -252,6 +273,7 @@ ul, li {
 @media (max-width: 35.9375em) {
   .navbar .search-hidden {
     opacity: 0;
+    visibility: hidden;
     -webkit-transform: translateX(-50%) translateY(-30px);
             transform: translateX(-50%) translateY(-30px);
   }
@@ -260,6 +282,7 @@ ul, li {
 @media (max-width: 35.9375em) {
   .navbar .search-active {
     opacity: 1;
+    visibility: visible;
     -webkit-transform: translateX(-50%) translateY(0px);
             transform: translateX(-50%) translateY(0px);
   }
@@ -352,6 +375,20 @@ input::-webkit-calendar-picker-indicator {
   background: rgba(61, 80, 123, 0.8);
 }
 
+@media (max-width: 85.3125em) {
+  .hidden-mobile {
+    -webkit-transform: translateX(-14rem);
+            transform: translateX(-14rem);
+  }
+}
+
+@media (max-width: 85.3125em) {
+  .active-mobile {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -363,6 +400,24 @@ input::-webkit-calendar-picker-indicator {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow-y: scroll;
+  -webkit-transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.sidebar--overlay {
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+
+.sidebar--overlay.active {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2500;
+  background-color: #33333390;
+  overflow-y: hidden;
 }
 
 .sidebar--wrapper {
@@ -405,7 +460,7 @@ input::-webkit-calendar-picker-indicator {
 
 .sidebar--toggle {
   position: fixed;
-  z-index: 6000;
+  z-index: 2955;
   top: 75px;
   left: 0px;
   color: #E05400;
@@ -414,6 +469,8 @@ input::-webkit-calendar-picker-indicator {
   border-radius: 0 10px 10px 0px;
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  -webkit-transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 300ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .sidebar--toggle.active {
@@ -442,6 +499,32 @@ input::-webkit-calendar-picker-indicator {
   width: 100%;
   height: 100%;
   padding: 2px 10px;
+}
+
+.loading-content {
+  position: absolute;
+  z-index: 6000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  color: #E05400;
+  font-size: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loading-content .loading-icon {
+  -webkit-animation: spinning 1.5s linear infinite;
+          animation: spinning 1.5s linear infinite;
 }
 
 .mainSection {
