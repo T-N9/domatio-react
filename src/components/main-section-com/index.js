@@ -105,18 +105,25 @@ const MainSection = () => {
             bodyText = "Are you a developer or an UI designer? Domatio is providing a collection of various resources for your upcoming or working projects."
             break;
         case 10:
-            headerText = "Dev guide";
+            headerText = "Powerful websites for learning development.";
+            bodyText = "Here are some courses and tools for learning and some may guide you during your development process."
             break;
         case 15:
-            headerText = "Design tools";
+            headerText = "Are you in love with web designs?";
+            bodyText = "This is a right place to browse visual resources and ready made design code for development. Web applications for design are included."
             break;
         case 20:
-            headerText = "Color tools";
+            headerText = "Spend less time finding a good color palette.";
+            bodyText = "Websites and generators to give you beautiful color combinations in your UI designs, logos and visual environment."
             break;
         case 25:
-            headerText = "Font sources";
+            headerText = "Typography is salt to your design.";
+            bodyText = "To make sure your design work has a proper and matching typography, the followings are to help you to find them and some can be directly imported."
             break;
-    
+        case 30:
+            headerText = "Play some fancy and ionic icons in your project.";
+            bodyText = "Using same icon resources for different design projects is boring. So, spend a minute to find some and use them appropriately."
+            break;
         default:
             break;
     }

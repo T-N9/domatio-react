@@ -56,6 +56,7 @@
     }
 
     &--header {
+        position: relative;
         padding: 0.655rem 0;
         background-color: rgba($clr-foam, 0.5);
         color: $clr-eastbay;
@@ -81,6 +82,27 @@
             @include m-breakpoint-down(small) {
                 width: 100%;
                 font-size: calUni(14px);
+            }
+        }
+
+        .tagboard {
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            bottom: -10px;
+            font-family: $font-heading;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+            font-size: 0.6255rem;
+            background-color: $clr-trinidad;
+            color: $clr-wah;
+            padding: 10px;
+            border-radius: 10px;
+            animation: slide_left 200ms ease both;
+
+            @include m-breakpoint-down(small) {
+                font-size: 0.5rem;
+                bottom: -25px;
             }
         }
     }

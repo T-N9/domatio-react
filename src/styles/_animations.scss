@@ -6,3 +6,12 @@
         transform: rotate(360deg);
     }
 }
+
+@keyframes slide_left {
+    from {
+        transform: translateX(30px) rotate(0deg);
+    }
+    to {
+        transform: translateX(0) rotate(20deg);
+    }
+}

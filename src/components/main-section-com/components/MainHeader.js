@@ -9,6 +9,9 @@ const MainHeader = (props) => {
                     {props.description}
                 </p>
             </div>
+            <div className={props.tagName ? "tagboard" : "tagboard d-none"}>
+                <h2>{props.tagName}</h2>
+            </div>
         </header>
     )
 }
