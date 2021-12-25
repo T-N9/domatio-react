@@ -99,7 +99,7 @@ background: rgba($clr-eastbay, 0.8);
     &--toggle {
         position: fixed;
         z-index: 2955;
-        top: 75px;
+        bottom: calUni(75px);
         left: 0px;
         color: $clr-trinidad;
         background-color: $clr-wah;

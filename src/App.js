@@ -22,7 +22,7 @@ const App = () => {
             .then(response => response.json())
             .then(data => {
                 setDoData(data.domatio);
-                document.querySelector('.loading-content').classList.add('visible-none');
+                // document.querySelector('.loading-content').classList.add('visible-none');
             });
     },[])
 

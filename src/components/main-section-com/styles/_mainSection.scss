@@ -1,5 +1,5 @@
 .loading-content {
-    position: absolute;
+    position: fixed;
     z-index: 6000;
     top: 0;
     left: 0;
@@ -49,6 +49,40 @@
 
     @include m-breakpoint-down(large){
         padding-left: 0;
+    }
+    
+    @include m-breakpoint-down(small){
+        padding-top: 3.2rem;
+    }
+
+    &--header {
+        padding: 0.655rem 0;
+        background-color: rgba($clr-foam, 0.5);
+        color: $clr-eastbay;
+
+        .title {
+            font-family: $font-heading;
+            font-weight: 800;
+
+            @include m-breakpoint-down(small) {
+                font-size:1.2rem;
+            }
+        }
+
+        .description {
+            color: #333;
+            width: 50%;
+
+
+            @include m-breakpoint-down(large) {
+                width: 70%;
+            }
+
+            @include m-breakpoint-down(small) {
+                width: 100%;
+                font-size: calUni(14px);
+            }
+        }
     }
 
     .card-grid {

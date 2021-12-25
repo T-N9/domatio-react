@@ -2,6 +2,7 @@ import React, { useContext, useState , useEffect } from "react";
 import { nanoid } from "nanoid";
 import Card from "./components/Card";
 import NoItem from "./components/NoItem";
+import MainHeader from "./components/MainHeader";
 import { DataContext } from "../../App";
 import { CategoryTagContext } from "../../App";
 
@@ -9,8 +10,10 @@ const MainSection = () => {
     const data_list = useContext(DataContext);
     const [cardData, setCardData ] = useState("");
     const { categoryId, tagName } = useContext(CategoryTagContext);
+    let headerText, bodyText;
 
     useEffect(() => {
+
         function withoutTagCall() {
             categoryId === 0 ?
             setCardData(
@@ -86,33 +89,41 @@ const MainSection = () => {
         if(tagName !== "") {
             tagFilterCall();
         }
+
+        if(cardData !== []){
+            setTimeout(() => {
+                document.querySelector('.loading-content').classList.add('visible-none');
+                console.log('Hello');
+            }, 2000);
+        }
+
     },[categoryId, tagName, data_list]);
 
-    // switch (categoryId) {
-    //     case 0:
-    //         headerText = "All items";
-    //         break;
-    //     case 10:
-    //         headerText = "Dev guide";
-    //         break;
-    //     case 15:
-    //         headerText = "Design tools";
-    //         break;
-    //     case 20:
-    //         headerText = "Color tools";
-    //         break;
-    //     case 25:
-    //         headerText = "Font sources";
-    //         break;
+    switch (categoryId) {
+        case 0:
+            headerText = "Browse useful websites and resources.";
+            bodyText = "Are you a developer or an UI designer? Domatio is providing a collection of various resources for your upcoming or working projects."
+            break;
+        case 10:
+            headerText = "Dev guide";
+            break;
+        case 15:
+            headerText = "Design tools";
+            break;
+        case 20:
+            headerText = "Color tools";
+            break;
+        case 25:
+            headerText = "Font sources";
+            break;
     
-    //     default:
-    //         break;
-    // }
+        default:
+            break;
+    }
 
     return (
         <section className="mainSection">
-            <div className="mainSection--header">
-            </div>
+            <MainHeader title={headerText} description={bodyText}  tagName={tagName}/>
             <NoItem data={cardData.length}/>
             <div className="container card-grid">
                 {cardData}

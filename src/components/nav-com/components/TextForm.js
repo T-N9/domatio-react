@@ -6,6 +6,16 @@ const TextForm = () => {
 
     const [input , setInput] = React.useState("");
     const { searchToggle } = useContext(searchContext);
+    React.useEffect( () => {
+        let height = document.querySelector('.card-grid').clientHeight;
+        
+        if(height <= 40) {
+            document.querySelector('.no-item-page').classList.remove('d-none');
+        }else{
+            document.querySelector('.no-item-page').classList.add('d-none');
+        }
+        console.log(height);
+    }, [input])
     // const data_list = useContext(DataContext);
     // let data_count = 0;
     // let data_options = Object.entries(data_list).map(data => {
@@ -27,7 +37,7 @@ const TextForm = () => {
             return item[1];
         })
 
-        
+
 
         
         // console.log(e.target.value);

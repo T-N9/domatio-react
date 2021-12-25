@@ -60,7 +60,7 @@ const SideBar = () => {
         }
     ]
 
-    const TagArray = ["free", "myanmar", "background", "design", "SVG", "generator", "premium", "frontend", "ui ux", "graphic design"]
+    const TagArray = ["free", "myanmar", "background", "design", "SVG", "generator", "premium", "frontend", "UI", "graphic design"]
 
     const [activeCate, setActiveCate] = useState(categoryArray)
 

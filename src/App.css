@@ -461,7 +461,7 @@ input::-webkit-calendar-picker-indicator {
 .sidebar--toggle {
   position: fixed;
   z-index: 2955;
-  top: 75px;
+  bottom: 4.6875rem;
   left: 0px;
   color: #E05400;
   background-color: #ffffff;
@@ -502,7 +502,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .loading-content {
-  position: absolute;
+  position: fixed;
   z-index: 6000;
   top: 0;
   left: 0;
@@ -575,6 +575,47 @@ input::-webkit-calendar-picker-indicator {
 @media (max-width: 85.3125em) {
   .mainSection {
     padding-left: 0;
+  }
+}
+
+@media (max-width: 35.9375em) {
+  .mainSection {
+    padding-top: 3.2rem;
+  }
+}
+
+.mainSection--header {
+  padding: 0.655rem 0;
+  background-color: rgba(196, 252, 240, 0.5);
+  color: #3D507B;
+}
+
+.mainSection--header .title {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+}
+
+@media (max-width: 35.9375em) {
+  .mainSection--header .title {
+    font-size: 1.2rem;
+  }
+}
+
+.mainSection--header .description {
+  color: #333;
+  width: 50%;
+}
+
+@media (max-width: 85.3125em) {
+  .mainSection--header .description {
+    width: 70%;
+  }
+}
+
+@media (max-width: 35.9375em) {
+  .mainSection--header .description {
+    width: 100%;
+    font-size: 0.875rem;
   }
 }
 
