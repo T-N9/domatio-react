@@ -139,3 +139,23 @@ background: rgba($clr-eastbay, 0.8);
         }
     }
 }
+
+.dark {
+    .sidebar {
+        background-color: $clr-dark;
+
+        .section-name {
+            color: $clr-foam;
+        }
+
+        &--category {
+            .category-list {
+                color: $clr-wah;
+
+                .category-item.active {
+                    background-color: $clr-bondi;
+                }
+            }
+        }
+    }
+}

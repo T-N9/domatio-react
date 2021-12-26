@@ -93,7 +93,7 @@ const MainSection = () => {
         if(cardData !== []){
             setTimeout(() => {
                 document.querySelector('.loading-content').classList.add('visible-none');
-            }, 2000);
+            }, 3000);
         }
 
     },[categoryId, tagName, data_list]);

@@ -377,6 +377,22 @@ input::-webkit-calendar-picker-indicator {
   display: none !important;
 }
 
+.dark .navbar {
+  background-color: #333333;
+}
+
+.dark .navbar--content .nav-btn {
+  color: #ffffff;
+}
+
+.dark .navbar--form input {
+  border-color: #00A0B3;
+}
+
+.dark .navbar--form button {
+  background-color: #00A0B3;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
@@ -525,6 +541,22 @@ input::-webkit-calendar-picker-indicator {
   padding: 2px 10px;
 }
 
+.dark .sidebar {
+  background-color: #333333;
+}
+
+.dark .sidebar .section-name {
+  color: #C4FCF0;
+}
+
+.dark .sidebar--category .category-list {
+  color: #ffffff;
+}
+
+.dark .sidebar--category .category-list .category-item.active {
+  background-color: #00A0B3;
+}
+
 .loading-content {
   position: fixed;
   z-index: 6000;
@@ -551,6 +583,10 @@ input::-webkit-calendar-picker-indicator {
 .loading-content .loading-icon {
   -webkit-animation: spinning 1.5s linear infinite;
           animation: spinning 1.5s linear infinite;
+}
+
+.dark .loading-content {
+  background-color: #333333;
 }
 
 .no-item-page {
@@ -594,6 +630,7 @@ input::-webkit-calendar-picker-indicator {
   width: 100%;
   padding-left: 13.75rem;
   padding-top: 4.375rem;
+  background-color: #ffffff;
 }
 
 @media (max-width: 85.3125em) {
@@ -773,5 +810,48 @@ input::-webkit-calendar-picker-indicator {
   /* number of lines to show */
   line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+
+.dark {
+  min-height: 100vh;
+  background-color: #333333;
+}
+
+.dark .mainSection {
+  background-color: #333333;
+}
+
+.dark .mainSection--header {
+  background-color: #3D507B;
+}
+
+.dark .mainSection--header .title {
+  color: #8BE386;
+}
+
+.dark .mainSection--header .description {
+  color: #ffffff;
+}
+
+.dark .mainSection .card-grid .cardSection:hover {
+  background-color: #4B4D52;
+}
+
+.dark .mainSection .card-grid .cardSection--name {
+  color: #8BE386;
+}
+
+.dark .mainSection .card-grid .cardSection--title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.dark .mainSection .card-grid .cardSection--desc {
+  color: #ffffff;
+}
+
+.dark .no-item-page h1 {
+  color: #8BE386;
 }
 /*# sourceMappingURL=App.css.map */

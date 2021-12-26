@@ -18,6 +18,12 @@
  
 }
 
+.dark {
+    .loading-content {
+        background-color: $clr-dark; 
+    }
+}
+
 .no-item-page {
     @include flex-center;
     padding: 2.5rem;
@@ -46,6 +52,7 @@
     width: 100%;
     padding-left: calUni(220px);
     padding-top: calUni(70px);
+    background-color: $clr-wah;
 
     @include m-breakpoint-down(large){
         padding-left: 0;
@@ -192,6 +199,54 @@
                         line-clamp: 3; 
                 -webkit-box-orient: vertical;
             }
+        }
+    }
+}
+
+.dark {
+    min-height: 100vh;
+    background-color: $clr-dark;
+    .mainSection {
+        background-color: $clr-dark;
+
+        &--header {
+            background-color: $clr-eastbay;
+
+            .title {
+                color: $clr-pastel;
+            }
+
+            .description {
+                color: $clr-wah;
+            }
+        }
+
+        .card-grid {
+            .cardSection {
+                // background-color: #4B4D52;
+                &:hover {
+                    background-color: #4B4D52;
+                }
+                &--name {
+                    color: $clr-pastel;
+                }
+    
+                &--title {
+                    font-family: $font-para;
+                    font-weight: 400;
+                    color: $clr-wah;
+                }
+    
+                &--desc {
+                    color: $clr-wah;
+                }
+            }
+        }
+    }
+
+    .no-item-page {
+        h1 {
+            color: $clr-pastel;
         }
     }
 }

@@ -119,4 +119,25 @@
 input::-webkit-calendar-picker-indicator {
     display: none !important;
   }
+
+.dark {
+    .navbar {
+        background-color: $clr-dark;
+
+        &--content {
+            .nav-btn {
+                color: $clr-wah;
+            }
+        }
+
+        &--form {
+            input {
+                border-color: $clr-bondi;
+            }
+            button {
+                background-color: $clr-bondi;
+            }
+        }
+    }
+}
   
