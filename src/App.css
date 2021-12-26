@@ -40,23 +40,23 @@ Font family
 
 @-webkit-keyframes slide_left {
   from {
-    -webkit-transform: translateX(30px) rotate(0deg);
-            transform: translateX(30px) rotate(0deg);
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
   }
   to {
-    -webkit-transform: translateX(0) rotate(20deg);
-            transform: translateX(0) rotate(20deg);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
 @keyframes slide_left {
   from {
-    -webkit-transform: translateX(30px) rotate(0deg);
-            transform: translateX(30px) rotate(0deg);
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
   }
   to {
-    -webkit-transform: translateX(0) rotate(20deg);
-            transform: translateX(0) rotate(20deg);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -623,6 +623,7 @@ input::-webkit-calendar-picker-indicator {
 @media (max-width: 35.9375em) {
   .mainSection--header .title {
     font-size: 1.2rem;
+    line-height: 1.2;
   }
 }
 

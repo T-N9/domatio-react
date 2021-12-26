@@ -9,9 +9,9 @@
 
 @keyframes slide_left {
     from {
-        transform: translateX(30px) rotate(0deg);
+        transform: translateX(30px);
     }
     to {
-        transform: translateX(0) rotate(20deg);
+        transform: translateX(0);
     }
 }

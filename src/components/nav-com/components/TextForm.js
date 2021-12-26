@@ -14,7 +14,6 @@ const TextForm = () => {
         }else{
             document.querySelector('.no-item-page').classList.add('d-none');
         }
-        console.log(height);
     }, [input])
     // const data_list = useContext(DataContext);
     // let data_count = 0;

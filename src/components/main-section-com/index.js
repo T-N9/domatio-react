@@ -93,7 +93,6 @@ const MainSection = () => {
         if(cardData !== []){
             setTimeout(() => {
                 document.querySelector('.loading-content').classList.add('visible-none');
-                console.log('Hello');
             }, 2000);
         }
 
