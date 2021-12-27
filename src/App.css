@@ -17,6 +17,7 @@ Font family
 ========================================  
 */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 @-webkit-keyframes spinning {
   from {
     -webkit-transform: rotate(0deg);
@@ -378,7 +379,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .dark .navbar {
-  background-color: #333333;
+  background-color: #324B4F;
 }
 
 .dark .navbar--content .nav-btn {
@@ -542,7 +543,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .dark .sidebar {
-  background-color: #333333;
+  background-color: #324B4F;
 }
 
 .dark .sidebar .section-name {
@@ -555,6 +556,12 @@ input::-webkit-calendar-picker-indicator {
 
 .dark .sidebar--category .category-list .category-item.active {
   background-color: #00A0B3;
+}
+
+.dark .sidebar--toggle {
+  background-color: #324B4F;
+  color: #ffffff;
+  border-color: #ffffff;
 }
 
 .loading-content {
@@ -586,7 +593,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .dark .loading-content {
-  background-color: #333333;
+  background-color: #324B4F;
 }
 
 .no-item-page {
@@ -641,7 +648,7 @@ input::-webkit-calendar-picker-indicator {
 
 @media (max-width: 35.9375em) {
   .mainSection {
-    padding-top: 3.2rem;
+    padding-top: 3.5rem;
   }
 }
 
@@ -693,7 +700,7 @@ input::-webkit-calendar-picker-indicator {
   font-size: 0.6255rem;
   background-color: #E05400;
   color: #ffffff;
-  padding: 10px;
+  padding: 5px 10px;
   border-radius: 10px;
   -webkit-animation: slide_left 200ms ease both;
           animation: slide_left 200ms ease both;
@@ -702,7 +709,7 @@ input::-webkit-calendar-picker-indicator {
 @media (max-width: 35.9375em) {
   .mainSection--header .tagboard {
     font-size: 0.5rem;
-    bottom: -25px;
+    bottom: -10px;
   }
 }
 
@@ -769,7 +776,7 @@ input::-webkit-calendar-picker-indicator {
   color: #ffffff;
   text-align: center;
   padding: 0 10px;
-  letter-spacing: 10px;
+  font-family: "Satisfy", cursive;
 }
 
 .mainSection .card-grid .cardSection--image .tags {
@@ -814,11 +821,11 @@ input::-webkit-calendar-picker-indicator {
 
 .dark {
   min-height: 100vh;
-  background-color: #333333;
+  background-color: #324B4F;
 }
 
 .dark .mainSection {
-  background-color: #333333;
+  background-color: #324B4F;
 }
 
 .dark .mainSection--header {
@@ -833,8 +840,12 @@ input::-webkit-calendar-picker-indicator {
   color: #ffffff;
 }
 
+.dark .mainSection .card-grid .cardSection {
+  background-color: #253a3d;
+}
+
 .dark .mainSection .card-grid .cardSection:hover {
-  background-color: #4B4D52;
+  background-color: #005C85;
 }
 
 .dark .mainSection .card-grid .cardSection--name {

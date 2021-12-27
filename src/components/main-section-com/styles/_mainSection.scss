@@ -59,7 +59,7 @@
     }
     
     @include m-breakpoint-down(small){
-        padding-top: 3.2rem;
+        padding-top: 3.5rem;
     }
 
     &--header {
@@ -105,13 +105,13 @@
             font-size: 0.6255rem;
             background-color: $clr-trinidad;
             color: $clr-wah;
-            padding: 10px;
+            padding: 5px 10px;
             border-radius: 10px;
             animation: slide_left 200ms ease both;
 
             @include m-breakpoint-down(small) {
                 font-size: 0.5rem;
-                bottom: -25px;
+                bottom: -10px;
             }
         }
     }
@@ -157,7 +157,8 @@
                     color: $clr-wah;
                     text-align: center;
                     padding: 0 10px;
-                    letter-spacing: 10px;
+                    font-family: $font-writing;
+                    // letter-spacing: 10px;
                 }
 
                 .tags{
@@ -223,9 +224,9 @@
 
         .card-grid {
             .cardSection {
-                // background-color: #4B4D52;
+                background-color: #253a3d;
                 &:hover {
-                    background-color: #4B4D52;
+                    background-color: #005C85;
                 }
                 &--name {
                     color: $clr-pastel;

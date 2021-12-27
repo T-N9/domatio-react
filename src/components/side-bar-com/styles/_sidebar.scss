@@ -157,5 +157,11 @@ background: rgba($clr-eastbay, 0.8);
                 }
             }
         }
+
+        &--toggle {
+            background-color: $clr-dark;
+            color: $clr-wah;
+            border-color: $clr-wah;
+        }
     }
 }
