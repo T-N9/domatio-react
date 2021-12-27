@@ -76,6 +76,10 @@ background: rgba($clr-eastbay, 0.8);
                 border-radius: 5px;
 
                 transition: all 100ms ease-out;
+
+                &:hover{
+                    background-color: rgba($clr-dark, $alpha: 0.2);
+                }
                 a {
                     display: block;
                     width: 100%;
@@ -121,6 +125,7 @@ background: rgba($clr-eastbay, 0.8);
             list-style-type: none;
             display: flex;
             flex-wrap: wrap;
+            color: $clr-dark;
 
             .tag-item {
                 background-color: $clr-foam;

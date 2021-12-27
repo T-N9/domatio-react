@@ -121,7 +121,7 @@ const MainSection = () => {
             break;
         case 30:
             headerText = "Play some fancy and ionic icons in your project.";
-            bodyText = "Using same icon resources for different design projects is boring. So, spend a minute to find some and use them appropriately."
+            bodyText = "Using same icon resource for different design projects is boring. So, spend a minute to find some and use them appropriately."
             break;
         default:
             break;
