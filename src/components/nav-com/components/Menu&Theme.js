@@ -3,6 +3,9 @@ import LineIcon from 'react-lineicons';
 import { searchContext } from "..";
 import { ThemeContext } from "../../../App";
 
+/* ==========================================
+Component for Search, Theme and Menu buttons
+============================================== */
 const MenuTheme = () => {
     const { setSearchToggle } = useContext(searchContext);
     const { darkMode, setDarkMode } = useContext(ThemeContext);

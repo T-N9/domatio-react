@@ -4,9 +4,13 @@ import { CategoryTagContext } from "../../App";
 
 const SideBar = () => {
 
+    // State for Toggle sidebar in small devices
     const [ sideToggle, setSideToggle ] = useState(false);
+
+    // Set category id and tag name on user interaction
     const { setCategoryId, setTagName } = useContext(CategoryTagContext);
 
+    // Category List array
     const categoryArray = [
         {
             id: 0,
@@ -60,8 +64,10 @@ const SideBar = () => {
         }
     ]
 
+    // Tag name List array
     const TagArray = ["free", "myanmar", "background", "design", "SVG", "generator", "premium", "frontend", "UI", "graphic design", "books", "CSS", "javascript", "documentation"];
 
+    // Active current user chosen category
     const [activeCate, setActiveCate] = useState(categoryArray)
 
     function handleCateActive(name) {
@@ -70,7 +76,6 @@ const SideBar = () => {
                 { ...item, active: item.active ? true : !item.active } : { ...item, active: item.active && false };
         }))
     }
-
 
     function handleClick(name, id) {
         setCategoryId(id);
@@ -87,6 +92,7 @@ const SideBar = () => {
         setSideToggle( prevToggle => !prevToggle);
     }
 
+    // Category list initialize from array
     const categoryList = activeCate.map(category => {
         return (
             <li
@@ -100,7 +106,7 @@ const SideBar = () => {
         )
     })
 
-
+    // Tag name list initialize form array
     const tagList = TagArray.map(tag => {
         return <li key={tag} onClick={() => changeTagName(tag)} className="tag-item"><a href="#up">{tag}</a></li>
     })

@@ -1,11 +1,11 @@
 import React from "react";
 
 const Card = (props) => {
-
+    // Make a random number(Array index) to pick a background gradient css
     function randomBgNum () {
         return (Math.floor(Math.random() * (12 - 1 )+ 1 ))-1;
     }
-
+    // Gradient background styles from https://www.gradientmagic.com/
     const gradientStyles = [
         {"backgroundImage":"linear-gradient(330deg, rgba(225, 225, 225, 0.05) 0%, rgba(225, 225, 225, 0.05) 33.333%,rgba(114, 114, 114, 0.05) 33.333%, rgba(114, 114, 114, 0.05) 66.666%,rgba(52, 52, 52, 0.05) 66.666%, rgba(52, 52, 52, 0.05) 99.999%),linear-gradient(66deg, rgba(181, 181, 181, 0.05) 0%, rgba(181, 181, 181, 0.05) 33.333%,rgba(27, 27, 27, 0.05) 33.333%, rgba(27, 27, 27, 0.05) 66.666%,rgba(251, 251, 251, 0.05) 66.666%, rgba(251, 251, 251, 0.05) 99.999%),linear-gradient(225deg, rgba(98, 98, 98, 0.05) 0%, rgba(98, 98, 98, 0.05) 33.333%,rgba(222, 222, 222, 0.05) 33.333%, rgba(222, 222, 222, 0.05) 66.666%,rgba(228, 228, 228, 0.05) 66.666%, rgba(228, 228, 228, 0.05) 99.999%),linear-gradient(90deg, rgb(28, 20, 63),rgb(40, 160, 253))"},
 
@@ -45,7 +45,6 @@ const Card = (props) => {
     ]
     
     return (
-        
         <div className="card-wrapper cardSection">
             <a href={props.link} target="_blank" rel="noreferrer">
                 <div className="cardSection--image" style={ props.image ? {backgroundImage: `url(${props.image})`} : gradientStyles[randomBgNum()]}>

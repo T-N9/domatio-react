@@ -5,6 +5,7 @@ import darkLogo from "../../images/domatio-logo-dark.png";
 import TextForm from "./components/TextForm";
 import MenuTheme from "./components/Menu&Theme";
 
+// Context for Search box toggle only for small devices
 export const searchContext = createContext({
     searchToggle : false,
     setSearchToggle : () => {}

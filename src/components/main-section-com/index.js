@@ -7,13 +7,17 @@ import { DataContext } from "../../App";
 import { CategoryTagContext } from "../../App";
 
 const MainSection = () => {
+    // DataContext from app.js
     const data_list = useContext(DataContext);
+    // State for deliver Cards
     const [cardData, setCardData ] = useState("");
+
+    // Receive category id and tag name context from app.js
     const { categoryId, tagName } = useContext(CategoryTagContext);
     let headerText, bodyText;
 
+    // Hook for initialize cards whether filter by Tag name or without tag name
     useEffect(() => {
-
         function withoutTagCall() {
             categoryId === 0 ?
             setCardData(
@@ -86,10 +90,12 @@ const MainSection = () => {
 
         withoutTagCall();
 
+        // Condition for "if user choose tag feature"
         if(tagName !== "") {
             tagFilterCall();
         }
 
+        // Condition for "if cardData is deliver fade out the loading screen"
         if(cardData !== []){
             setTimeout(() => {
                 document.querySelector('.loading-content').classList.add('visible-none');
@@ -98,6 +104,7 @@ const MainSection = () => {
 
     },[categoryId, tagName, data_list]);
 
+    // Condition for header and bodyText of Main Section Header
     switch (categoryId) {
         case 0:
             headerText = "Browse useful websites and resources.";

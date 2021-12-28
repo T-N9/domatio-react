@@ -1,7 +1,11 @@
-import React, {useState, useEffect, createContext } from "react";
+import React, { useState, useEffect, createContext } from "react";
 import LineIcon from 'react-lineicons';
 import { MainSection, NavBar, SideBar } from "./components";
 
+/* ==========================================
+Context to deliver category id and tag name 
+to main-section/index.js 
+============================================== */
 const DataContext = createContext();
 export const CategoryTagContext = createContext({
     categoryId : 0,
@@ -10,8 +14,11 @@ export const CategoryTagContext = createContext({
     setTagName: () => {}
 });
 
+/* ==========================================
+LocalStorage initialization for dark theme
+to memorize theme user theme setting in browser
+============================================== */
 let dark_theme = localStorage.getItem("theme");
-
 if(dark_theme === null) {
     localStorage.setItem("theme", false);
     dark_theme = localStorage.getItem("theme") && false;
@@ -20,15 +27,16 @@ if(dark_theme === null) {
 }else if (dark_theme === 'false'){
     dark_theme = false
 }
-
 export const ThemeContext = createContext({
     darkMode : dark_theme,
     setDarkMode : () => {}
 });
 
 const App = () => {
-
+    // State to store data from API
     const [ dodata, setDoData] = useState({});
+
+    // States and value to maintain and export context data
     const [ categoryId, setCategoryId ] = useState(0);
     const [ tagName, setTagName ] = useState("");
     const [ darkMode, setDarkMode ] = useState(dark_theme);
@@ -46,9 +54,13 @@ const App = () => {
 
     return (
         <>
+            {/* Data from API context */}
             <DataContext.Provider value={dodata}>
+                {/* Theme setting layer or wrapper */}
                 <div className={darkMode ? "dark" : ""}>
+                    {/* Main Content */}
                     <main>
+                        {/* div for scroll to top */}
                         <span id="up"></span>
                         <ThemeContext.Provider value={themeValue}>
                             <NavBar />
@@ -58,6 +70,7 @@ const App = () => {
                                 <MainSection categoryId={categoryId}/>
                             </CategoryTagContext.Provider>
                     </main>
+                    {/* Loading Content before main content */}
                     <div className="loading-content">
                         <span className="loading-icon">
                             <LineIcon name="spinner" />

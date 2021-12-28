@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import LineIcon from "react-lineicons";
 import { searchContext } from "..";
 
@@ -6,7 +6,9 @@ const TextForm = () => {
 
     const [input , setInput] = React.useState("");
     const { searchToggle } = useContext(searchContext);
-    React.useEffect( () => {
+
+    // Hook for getting .card-grid height if it is lower than or equal 40px, this mean there is no item for card content and make visible .no-item-page 
+    useEffect( () => {
         let height = document.querySelector('.card-grid').clientHeight;
         
         if(height <= 40) {
@@ -15,6 +17,7 @@ const TextForm = () => {
             document.querySelector('.no-item-page').classList.add('d-none');
         }
     }, [input])
+
     // const data_list = useContext(DataContext);
     // let data_count = 0;
     // let data_options = Object.entries(data_list).map(data => {
@@ -22,8 +25,8 @@ const TextForm = () => {
     //     return <option key={data_count} value={data[1].name}>{data[1].name}</option>
     // });
 
+    // Search Text box function to call every time user type and play .d-none class to match with user input
     let cardClasses;
-
     function handleChange(e) {
         cardClasses = Array.from(document.getElementsByClassName('cardSection'));
         setInput(e.target.value);
@@ -34,10 +37,7 @@ const TextForm = () => {
             item[1].classList.add('d-none');
 
             return item[1];
-        })
-
-
-
+        });
         
         // console.log(e.target.value);
         
