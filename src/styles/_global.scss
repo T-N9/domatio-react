@@ -111,7 +111,7 @@ Utility classes
 
 .hide-on-mobile {
   @include m-breakpoint-down(large) {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -121,6 +121,11 @@ Utility classes
   }
 }
 
+.hide-on-small {
+  @include m-breakpoint-down(small) {
+    display: none !important;
+  }
+}
 .only-on-small {
   @include m-breakpoint-up(medium){
     display: none;

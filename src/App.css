@@ -175,13 +175,19 @@ Utility classes
 
 @media (max-width: 85.3125em) {
   .hide-on-mobile {
-    display: none;
+    display: none !important;
   }
 }
 
 @media (min-width: 85.375em) {
   .hide-on-desktop {
     display: none;
+  }
+}
+
+@media (max-width: 35.9375em) {
+  .hide-on-small {
+    display: none !important;
   }
 }
 
@@ -757,7 +763,14 @@ input::-webkit-calendar-picker-indicator {
           user-select: none;
 }
 
-.mainSection .card-grid .cardSection a {
+@media (max-width: 35.9375em) {
+  .mainSection .card-grid .cardSection {
+    min-height: 8.75rem;
+    background-size: 100%;
+  }
+}
+
+.mainSection .card-grid .cardSection--content {
   display: block;
   width: 100%;
   height: 100%;

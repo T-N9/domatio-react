@@ -130,6 +130,10 @@ const MainSection = () => {
             headerText = "Play some fancy and ionic icons in your project.";
             bodyText = "Using same icon resource for different design projects is boring. So, spend a minute to find some and use them appropriately."
             break;
+        case 35:
+            headerText = "Run out of idea? Here are some inspirations.";
+            bodyText = "Sometimes creativity comes after you have been inspired by others work. It is also a way to stay up to date."
+            break;
         default:
             break;
     }

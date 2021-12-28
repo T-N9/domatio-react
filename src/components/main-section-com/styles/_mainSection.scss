@@ -140,7 +140,12 @@
             transition: all 200ms ease-out;
             user-select: none;
 
-            a {
+            @include m-breakpoint-down(small) {
+                min-height: calUni(140px);
+                background-size: 100%;
+            }
+
+            &--content {
                 display: block;
                 width: 100%;
                 height: 100%;
@@ -231,9 +236,11 @@
         .card-grid {
             .cardSection {
                 background-color: #253a3d;
+                
                 &:hover {
                     background-color: #005C85;
                 }
+
                 &--name {
                     color: $clr-pastel;
                 }

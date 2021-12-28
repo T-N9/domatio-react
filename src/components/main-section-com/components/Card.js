@@ -46,7 +46,7 @@ const Card = (props) => {
     
     return (
         <div className="card-wrapper cardSection">
-            <a href={props.link} target="_blank" rel="noreferrer">
+            <a className="cardSection--content" href={props.link} target="_blank" rel="noreferrer">
                 <div className="cardSection--image" style={ props.image ? {backgroundImage: `url(${props.image})`} : gradientStyles[randomBgNum()]}>
                     <h1 className="image-text">
                         {props.image ? "" : props.name}
@@ -59,12 +59,14 @@ const Card = (props) => {
                         }
                     </small>
                 </div>
-                <h1 className="cardSection--name">{props.name}</h1>
-                { 
-                    props.title ? 
-                    <h4 className="cardSection--title">{props.title}</h4> : 
-                    <h4 className="cardSection--desc">{props.desc}</h4> 
-                }
+                <div>
+                    <h1 className="cardSection--name">{props.name}</h1>
+                    { 
+                        props.title ? 
+                        <h4 className="cardSection--title">{props.title}</h4> : 
+                        <h4 className="cardSection--desc">{props.desc}</h4> 
+                    }
+                </div>
             </a>
         </div>
         
