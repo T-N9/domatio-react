@@ -796,6 +796,12 @@ input::-webkit-calendar-picker-indicator {
   margin-bottom: 0.75rem;
 }
 
+@media (max-width: 35.9375em) {
+  .mainSection .card-grid .cardSection--image {
+    height: 120px;
+  }
+}
+
 .mainSection .card-grid .cardSection--image .image-text {
   color: #ffffff;
   text-align: center;
