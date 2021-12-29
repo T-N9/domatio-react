@@ -49,17 +49,22 @@ const SideBar = () => {
         },
         {
             id: 40,
-            name: "Image sources",
+            name: "Illustrations",
             active: false
         },
         {
             id: 45,
-            name: "Games",
+            name: "Image Sources",
             active: false
         },
         {
             id: 50,
-            name: "Social apps",
+            name: "Games",
+            active: false
+        },
+        {
+            id: 55,
+            name: "Social Apps",
             active: false
         }
     ]
