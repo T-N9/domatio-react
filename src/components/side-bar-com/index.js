@@ -119,7 +119,7 @@ const SideBar = () => {
     return (
         <>
             <div onClick={sidebarToggle} className={ sideToggle ? "sidebar--overlay hide-on-desktop active" : "sidebar--overlay hide-on-desktop"}></div>
-            <button onClick={sidebarToggle} className={ sideToggle ? "sidebar--toggle hide-on-desktop active" : "sidebar--toggle hide-on-desktop "}>
+            <button aria-label="sidebar toggle button" onClick={sidebarToggle} className={ sideToggle ? "sidebar--toggle hide-on-desktop active" : "sidebar--toggle hide-on-desktop "}>
                 <LineIcon name="radio-button" />
             </button>
             <aside className={ sideToggle ? "sidebar active-mobile" : "sidebar hidden-mobile"}>
