@@ -64,7 +64,7 @@ const SideBar = () => {
         },
         {
             id: 55,
-            name: "Social Apps",
+            name: "Communities",
             active: false
         }
     ]

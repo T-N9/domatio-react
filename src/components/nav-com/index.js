@@ -4,6 +4,7 @@ import logo from "../../images/domatio-logo.png";
 import darkLogo from "../../images/domatio-logo-dark.png";
 import TextForm from "./components/TextForm";
 import MenuTheme from "./components/Menu&Theme";
+import MenuOption from "./components/MenuOption";
 
 // Context for Search box toggle only for small devices
 export const searchContext = createContext({
@@ -31,8 +32,8 @@ const NavBar = () => {
                         <MenuTheme/>
                     </div>
                 </searchContext.Provider>
-
             </div>
+            {/* <MenuOption/> */}
         </nav>
     )
 }

@@ -2,6 +2,7 @@ import React, {useContext} from "react";
 import LineIcon from 'react-lineicons';
 import { searchContext } from "..";
 import { ThemeContext } from "../../../App";
+import MenuOption from "./MenuOption";
 
 /* ==========================================
 Component for Search, Theme and Menu buttons
@@ -27,9 +28,10 @@ const MenuTheme = () => {
             <button onClick={darkToggle} className="nav-btn" aria-label="theme toggle button">
                 <LineIcon name={darkMode ? "night" : "sun"}/>
             </button>
-            <button className="nav-btn mr-0" aria-label="menu toggle button">
+            <button className="nav-btn nav-menu-btn mr-0" aria-label="menu toggle button">
                 <LineIcon name="menu"/>
             </button>
+            <MenuOption/>
         </div>
     )
 }

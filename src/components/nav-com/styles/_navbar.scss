@@ -28,6 +28,8 @@
     &--content {
         .button-wrapper {
             @include flex-center;
+
+            
         }
         .nav-btn {
             font-size: 1.75rem;
@@ -114,6 +116,48 @@
             border-radius: 0px 3px 3px 0px;
         }
     }
+}
+
+.menuOption {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    background-color: $clr-wah;
+    right: 10px;
+    top: calUni(50px);
+    transition: all 200ms ease-in-out;
+    padding: calUni(10px) 15px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    display: flex;
+    flex-direction: column;
+
+    button {
+        font-family: $font-heading;
+        padding: 5px 10px;
+        color: $clr-dark;
+        transition: all 200ms ease;
+        &:hover {
+            color: $clr-trinidad;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+    }
+
+    button:not(:last-child){
+        margin-bottom: 10px;
+    }
+    
+}
+
+.nav-menu-btn:hover + .menuOption {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menuOption:hover {
+    visibility: visible;
+    opacity: 1;
 }
 
 input::-webkit-calendar-picker-indicator {

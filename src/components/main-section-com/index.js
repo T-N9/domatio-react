@@ -138,6 +138,18 @@ const MainSection = () => {
             headerText = "Demonstrate your work with illustrations.";
             bodyText = "Deliver your product or project with beautiful, digitalize hand-drawn illustrations. Better used for social design, web design and product design."
             break;
+        case 45:
+            headerText = "Create more interesting media contents.";
+            bodyText = "Following resources will give you photos and media for your social design and UI design."
+            break;
+        case 50:
+            headerText = "Sharpen your skills with these games.";
+            bodyText = "Play around with programming logic and CSS tests."
+            break;
+        case 55:
+            headerText = "Stay connect and up-to-date.";
+            bodyText = "Connect with other developers around the globe, share your thought and be better at learning from others."
+            break;
         default:
             break;
     }
