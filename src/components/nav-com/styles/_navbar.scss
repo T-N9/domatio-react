@@ -133,6 +133,10 @@
     display: flex;
     flex-direction: column;
 
+    @include m-breakpoint-up(slarge) {
+        right: 250px;
+    }
+
     button {
         font-family: $font-heading;
         padding: 5px 10px;
@@ -162,7 +166,61 @@
 
 input::-webkit-calendar-picker-indicator {
     display: none !important;
-  }
+}
+
+.menuModal {
+    
+    &--wrapper {
+        transition: all 200ms ease-in;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba($clr-dark, 0.8);
+
+        @include flex-center;
+
+        .modal {
+            background-color: $clr-wah;
+            width: 80%;
+            min-height:80%;
+            border-radius: 5px;
+            
+            @include m-breakpoint-down(small) {
+                width: 100%;
+                min-height: 100%;
+                border-radius: 0px;
+            }
+
+            &--header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px;
+                background-color: $clr-bluewood;
+
+                h1 {
+                    font-family: $font-heading;
+                    font-weight: 800;
+                    color: $clr-trinidad;
+                    font-size: 1.765rem;
+                }
+
+                button {
+                    color: $clr-wah;
+                    padding: 10px;
+                    transition: color 100ms ease;
+
+                    &:hover {
+                        color: $clr-trinidad;
+                    }
+                }
+            }
+        }
+    }
+
+}
 
 .dark {
     .navbar {

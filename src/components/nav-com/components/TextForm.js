@@ -53,7 +53,7 @@ const TextForm = () => {
 
     return (
         <form action="" className={ searchToggle ? "navbar--form search-active" : "navbar--form search-hidden"} onSubmit={handleSubmit}>
-            <label for="search-data" className="d-none">Search form</label>
+            <label htmlFor="search-data" className="d-none">Search form</label>
             <input
                 type="text"
                 placeholder="Enter a name or tag"

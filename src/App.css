@@ -402,6 +402,12 @@ ul, li {
           flex-direction: column;
 }
 
+@media (min-width: 120em) {
+  .menuOption {
+    right: 250px;
+  }
+}
+
 .menuOption button {
   font-family: "Nunito", sans-serif;
   padding: 5px 10px;
@@ -432,6 +438,73 @@ ul, li {
 
 input::-webkit-calendar-picker-indicator {
   display: none !important;
+}
+
+.menuModal--wrapper {
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(50, 75, 79, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menuModal--wrapper .modal {
+  background-color: #ffffff;
+  width: 80%;
+  min-height: 80%;
+  border-radius: 5px;
+}
+
+@media (max-width: 35.9375em) {
+  .menuModal--wrapper .modal {
+    width: 100%;
+    min-height: 100%;
+    border-radius: 0px;
+  }
+}
+
+.menuModal--wrapper .modal--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+  background-color: #2F4858;
+}
+
+.menuModal--wrapper .modal--header h1 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  color: #E05400;
+  font-size: 1.765rem;
+}
+
+.menuModal--wrapper .modal--header button {
+  color: #ffffff;
+  padding: 10px;
+  -webkit-transition: color 100ms ease;
+  transition: color 100ms ease;
+}
+
+.menuModal--wrapper .modal--header button:hover {
+  color: #E05400;
 }
 
 .dark .navbar {
