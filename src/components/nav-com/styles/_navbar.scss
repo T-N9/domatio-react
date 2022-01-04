@@ -213,6 +213,7 @@ input::-webkit-calendar-picker-indicator {
                 align-items: center;
                 padding: 10px 20px;
                 background-color: $clr-bluewood;
+                border-radius: 5px 5px 0 0;
 
                 h1 {
                     font-family: $font-heading;
@@ -238,6 +239,18 @@ input::-webkit-calendar-picker-indicator {
                 height: auto;
                 color: $clr-dark;
                 margin-top: 20px;
+
+                .desc-left {
+                    flex: 1;
+                }
+
+                .desc-right {
+                    flex: 1;
+                }
+
+                b {
+                    color: $clr-trinidad;
+                }
 
                 h1 {
                     font-family: $font-heading;
@@ -305,6 +318,20 @@ input::-webkit-calendar-picker-indicator {
                 background-color: $clr-bondi;
             }
         }
+    }
+
+    .menuModal {
+        &--wrapper {
+            .modal {
+                border: 1px solid $clr-wah;
+                background-color: $clr-bluewood;
+    
+                &--desc {
+                    color: $clr-wah;
+                }
+            }
+        }
+        
     }
 }
   

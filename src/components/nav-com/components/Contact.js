@@ -18,6 +18,27 @@ const Contact = () => {
                     <LineIcon name="close" />
                 </button>
             </div>
+            <div className="modal--desc container">
+                <div>
+                    <h1>Developer</h1>
+                    <div className="sub-informer">
+                        <a href="https://www.linkedin.com/in/te-nyain-moe-lwin-80b4a11a4/" target="_blank" rel="noreferrer">
+                            <code>
+                                Te Nyain Moe Lwin
+                            </code>
+                        </a>
+                    </div>
+
+                    <h1>GitHub</h1>
+                    <div className="sub-informer">
+                        <a href="https://github.com/T-N9/domatio-react" target="_blank" rel="noreferrer">
+                            <code>
+                                Domatio React
+                            </code>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

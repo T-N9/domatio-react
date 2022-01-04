@@ -47,6 +47,15 @@ const Credits = () => {
                             </code>
                         </a>
                     </div>
+
+                    <h1>References</h1>
+                    <div className="sub-informer">
+                        <a href="https://github.com/bradtraversy/design-resources-for-developers" target="_blank" rel="noreferrer">
+                            <code>
+                                Brad Traversy
+                            </code>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

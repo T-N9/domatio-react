@@ -499,6 +499,7 @@ input::-webkit-calendar-picker-indicator {
           align-items: center;
   padding: 10px 20px;
   background-color: #2F4858;
+  border-radius: 5px 5px 0 0;
 }
 
 .menuModal--wrapper .modal--header h1 {
@@ -529,6 +530,22 @@ input::-webkit-calendar-picker-indicator {
   height: auto;
   color: #324B4F;
   margin-top: 20px;
+}
+
+.menuModal--wrapper .modal--desc .desc-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.menuModal--wrapper .modal--desc .desc-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.menuModal--wrapper .modal--desc b {
+  color: #E05400;
 }
 
 .menuModal--wrapper .modal--desc h1 {
@@ -598,6 +615,15 @@ input::-webkit-calendar-picker-indicator {
 
 .dark .navbar--form button {
   background-color: #00A0B3;
+}
+
+.dark .menuModal--wrapper .modal {
+  border: 1px solid #ffffff;
+  background-color: #2F4858;
+}
+
+.dark .menuModal--wrapper .modal--desc {
+  color: #ffffff;
 }
 
 /* width */

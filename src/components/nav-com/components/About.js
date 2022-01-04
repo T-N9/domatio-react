@@ -19,7 +19,10 @@ const About = () => {
                 </button>
             </div>
             <div className="modal--desc container">
-                <div>
+                <div className="desc-left">
+                    <p>
+                        <b>Domatio</b> δωμάτιο (do̱mátio) means "room" in greek. It is a room of useful websites and launched in 2022 January.
+                    </p>
                     <p>
                     Domatio is a website that helps a user find resources for web design, graphic design, UI/UX, and web development projects in one place. It provides a live search and tag feature to find the closest product that a user wants. Our goal is to showcase useful development resources, websites, and communities along with their brief descriptions.
                     </p>
@@ -27,7 +30,9 @@ const About = () => {
                     <code>Version - 1.0</code><br />
                     <code>Domatio &copy; 2022 All Rights Reserved.</code>
                 </div>
-                <img className="image" src="https://domatio.netlify.app/meta-domatio.png" alt="about domatio" />
+                <div className="desc-right">
+                    <img className="image" src="https://domatio.netlify.app/meta-domatio.png" alt="about domatio" />
+                </div>
             </div>
         </div>
     )
