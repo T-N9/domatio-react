@@ -18,6 +18,37 @@ const Credits = () => {
                     <LineIcon name="close" />
                 </button>
             </div>
+            <div className="modal--desc container">
+                <div>
+                    <h1>User Interface</h1>
+                    <div className="sub-informer">
+                        <a href="https://storyset.com/illustration/404-error-with-a-cute-animal/pana" target="_blank" rel="noreferrer">
+                        <code>Story Set Illustrations</code>   
+                        </a>
+                        
+                        <a href="https://lineicons.com/" target="_blank" rel="noreferrer">
+                            <code>
+                                Line Icons
+                            </code>
+                        </a>
+
+                        <a href="https://www.gradientmagic.com/" target="_blank" rel="noreferrer">
+                            <code>
+                                Gradient Magic
+                            </code>
+                        </a>
+                    </div>
+
+                    <h1>Developer and Designer</h1>
+                    <div className="sub-informer">
+                        <a href="https://www.linkedin.com/in/te-nyain-moe-lwin-80b4a11a4/" target="_blank" rel="noreferrer">
+                            <code>
+                                Te Nyain Moe Lwin
+                            </code>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

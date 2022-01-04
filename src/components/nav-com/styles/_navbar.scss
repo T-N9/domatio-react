@@ -154,6 +154,20 @@
     
 }
 
+.dark {
+    .menuOption {
+        background-color: $clr-dark;
+        
+        button {
+            color: $clr-wah;
+
+            &:hover {
+                color:$clr-trinidad;
+            }
+        }
+    }
+}
+
 .nav-menu-btn:hover + .menuOption {
     visibility: visible;
     opacity: 1;
@@ -215,6 +229,57 @@ input::-webkit-calendar-picker-indicator {
                     &:hover {
                         color: $clr-trinidad;
                     }
+                }
+            }
+
+            &--desc {
+                display: flex;
+                align-items: flex-start;
+                height: auto;
+                color: $clr-dark;
+                margin-top: 20px;
+
+                h1 {
+                    font-family: $font-heading;
+                }
+
+                a {
+                    margin: 10px;
+                }
+
+                @include m-breakpoint-down(lmedium) {
+                    flex-direction: column-reverse;
+                }
+
+                p {
+                    padding: 15px 15px 0 0;
+                    font-size: 1.256rem;
+                    text-align: justify;
+
+                    @include m-breakpoint-down(small) {
+                        font-size: 1rem;
+                    }
+                }
+                
+                code {
+                    display: inline-block;
+                    font-size: 1rem;
+                    margin: 15px 0 15px 0;
+                    background-color: $clr-trinidad;
+                    color: $clr-wah;
+                    padding: 5px 10px;
+                    background: rgb(224,84,0);
+                    background: linear-gradient(360deg, rgba(224,84,0,1) 0%, rgba(255,138,67,1) 100%);
+                    border-radius: 5px;
+
+                    @include m-breakpoint-down(small) {
+                        font-size: 0.8rem;
+                    }
+                }
+
+                .image {
+                    width: 500px;
+                    margin: auto;
                 }
             }
         }

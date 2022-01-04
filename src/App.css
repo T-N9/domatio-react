@@ -426,6 +426,18 @@ ul, li {
   margin-bottom: 10px;
 }
 
+.dark .menuOption {
+  background-color: #324B4F;
+}
+
+.dark .menuOption button {
+  color: #ffffff;
+}
+
+.dark .menuOption button:hover {
+  color: #E05400;
+}
+
 .nav-menu-btn:hover + .menuOption {
   visibility: visible;
   opacity: 1;
@@ -505,6 +517,71 @@ input::-webkit-calendar-picker-indicator {
 
 .menuModal--wrapper .modal--header button:hover {
   color: #E05400;
+}
+
+.menuModal--wrapper .modal--desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: auto;
+  color: #324B4F;
+  margin-top: 20px;
+}
+
+.menuModal--wrapper .modal--desc h1 {
+  font-family: "Nunito", sans-serif;
+}
+
+.menuModal--wrapper .modal--desc a {
+  margin: 10px;
+}
+
+@media (max-width: 63.9375em) {
+  .menuModal--wrapper .modal--desc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.menuModal--wrapper .modal--desc p {
+  padding: 15px 15px 0 0;
+  font-size: 1.256rem;
+  text-align: justify;
+}
+
+@media (max-width: 35.9375em) {
+  .menuModal--wrapper .modal--desc p {
+    font-size: 1rem;
+  }
+}
+
+.menuModal--wrapper .modal--desc code {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 15px 0 15px 0;
+  background-color: #E05400;
+  color: #ffffff;
+  padding: 5px 10px;
+  background: #e05400;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e05400), to(#ff8a43));
+  background: linear-gradient(360deg, #e05400 0%, #ff8a43 100%);
+  border-radius: 5px;
+}
+
+@media (max-width: 35.9375em) {
+  .menuModal--wrapper .modal--desc code {
+    font-size: 0.8rem;
+  }
+}
+
+.menuModal--wrapper .modal--desc .image {
+  width: 500px;
+  margin: auto;
 }
 
 .dark .navbar {

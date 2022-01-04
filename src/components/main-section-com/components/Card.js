@@ -63,9 +63,9 @@ const Card = (props) => {
                 <div>
                     <h1 className="cardSection--name">{props.name}</h1>
                     { 
-                        props.title ? 
-                        <p className="cardSection--title">{props.title}</p> : 
-                        <p className="cardSection--desc">{props.desc}</p> 
+                        props.desc ? 
+                        <p className="cardSection--desc">{props.desc}</p> : 
+                        <p className="cardSection--title">{props.title}</p> 
                     }
                 </div>
             </a>
