@@ -502,6 +502,12 @@ input::-webkit-calendar-picker-indicator {
   border-radius: 5px 5px 0 0;
 }
 
+@media (max-width: 35.9375em) {
+  .menuModal--wrapper .modal--header {
+    border-radius: 0px;
+  }
+}
+
 .menuModal--wrapper .modal--header h1 {
   font-family: "Nunito", sans-serif;
   font-weight: 800;
@@ -696,12 +702,27 @@ input::-webkit-calendar-picker-indicator {
   padding: 20px 10px 20px 20px;
 }
 
+.sidebar--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sidebar--header .toggle-sideContent {
+  color: #324B4F;
+}
+
 .sidebar--category .category-list {
   color: #55433B;
   font-size: 1.125rem;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   list-style-type: none;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
 }
 
 .sidebar--category .category-list .category-item {
@@ -785,6 +806,10 @@ input::-webkit-calendar-picker-indicator {
 
 .dark .sidebar .section-name {
   color: #C4FCF0;
+}
+
+.dark .sidebar--header .toggle-sideContent {
+  color: #ffffff;
 }
 
 .dark .sidebar--category .category-list {

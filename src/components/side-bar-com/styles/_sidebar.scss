@@ -62,6 +62,15 @@ background: rgba($clr-eastbay, 0.8);
         padding: 20px 10px 20px 20px;
     }
 
+    &--header{
+        display: flex;
+        justify-content: space-between;
+
+        .toggle-sideContent {
+            color: $clr-dark;
+        }
+    }
+
     &--category {
 
         .category-list {
@@ -70,6 +79,7 @@ background: rgba($clr-eastbay, 0.8);
             font-family: $font-heading;
             font-weight: 600;
             list-style-type: none;
+            transition: all 200ms ease-out;
 
             .category-item {
                 margin: 5px 0;
@@ -151,6 +161,13 @@ background: rgba($clr-eastbay, 0.8);
 
         .section-name {
             color: $clr-foam;
+        }
+
+        &--header{
+    
+            .toggle-sideContent {
+                color: $clr-wah;
+            }
         }
 
         &--category {

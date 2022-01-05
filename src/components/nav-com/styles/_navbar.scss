@@ -215,6 +215,10 @@ input::-webkit-calendar-picker-indicator {
                 background-color: $clr-bluewood;
                 border-radius: 5px 5px 0 0;
 
+                @include m-breakpoint-down(small) {
+                    border-radius: 0px;
+                }
+
                 h1 {
                     font-family: $font-heading;
                     font-weight: 800;

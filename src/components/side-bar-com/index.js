@@ -5,8 +5,15 @@ import { CategoryTagContext } from "../../App";
 const SideBar = () => {
 
     // State for Toggle sidebar in small devices
-    const [ sideToggle, setSideToggle ] = useState(false);
+    const [sideToggle, setSideToggle] = useState(false);
+    // const [categoryToggle, setCategoryToggle] = useState(true);
+    // const [tagToggle, setTagToggle] = useState(true);
 
+    const [ listToggle, setListToggle ] = useState({
+        category : true,
+        tag : true
+    })
+    
     // Set category id and tag name on user interaction
     const { setCategoryId, setTagName } = useContext(CategoryTagContext);
 
@@ -93,8 +100,8 @@ const SideBar = () => {
         sidebarToggle();
     }
 
-    function sidebarToggle () {
-        setSideToggle( prevToggle => !prevToggle);
+    function sidebarToggle() {
+        setSideToggle(prevToggle => !prevToggle);
     }
 
     // Category list initialize from array
@@ -109,7 +116,16 @@ const SideBar = () => {
                 </a>
             </li>
         )
-    })
+    });
+
+    function listToggler (e) {
+        setListToggle( prev => ({
+            ...prev,
+            [e] : !prev[e]
+        }))
+
+        console.log(listToggle)
+    }
 
     // Tag name list initialize form array
     const tagList = TagArray.map(tag => {
@@ -118,27 +134,43 @@ const SideBar = () => {
 
     return (
         <>
-            <div onClick={sidebarToggle} className={ sideToggle ? "sidebar--overlay hide-on-desktop active" : "sidebar--overlay hide-on-desktop"}></div>
-            <button aria-label="sidebar toggle button" onClick={sidebarToggle} className={ sideToggle ? "sidebar--toggle hide-on-desktop active" : "sidebar--toggle hide-on-desktop "}>
+            <div onClick={sidebarToggle} className={sideToggle ? "sidebar--overlay hide-on-desktop active" : "sidebar--overlay hide-on-desktop"}></div>
+            <button aria-label="sidebar toggle button" onClick={sidebarToggle} className={sideToggle ? "sidebar--toggle hide-on-desktop active" : "sidebar--toggle hide-on-desktop "}>
                 <LineIcon name="radio-button" />
             </button>
-            <aside className={ sideToggle ? "sidebar active-mobile" : "sidebar hidden-mobile"}>
+            <aside className={sideToggle ? "sidebar active-mobile" : "sidebar hidden-mobile"}>
                 <div className="sidebar--wrapper">
 
                     <section className="sidebar--category">
-                        <small className="section-name">
-                            Categories
-                        </small>
-                        <ul className="category-list">
+                        <div className="sidebar--header">
+                            <small className="section-name">
+                                Categories
+                            </small>
+
+                            <button
+                                onClick={() => listToggler("category")} className="toggle-sideContent"
+                            >
+                                <LineIcon name={listToggle.category ? "chevron-up" : "chevron-down"} />
+                            </button>
+                        </div>
+                        <ul className={listToggle.category ? "category-list" : "category-list d-none"}>
                             {categoryList}
                         </ul>
                     </section>
                     <hr />
                     <section className="sidebar--tag">
-                        <small className="section-name">
-                            Tags
-                        </small>
-                        <ul className="tag-list">
+                        <div className="sidebar--header">
+                            <small className="section-name">
+                                Tags
+                            </small>
+
+                            <button
+                                onClick={() => listToggler("tag")} className="toggle-sideContent"
+                            >
+                                <LineIcon name={listToggle.tag ? "chevron-up" : "chevron-down"} />
+                            </button>
+                        </div>
+                        <ul className={listToggle.tag ? "tag-list" : "tag-list d-none"}>
                             {tagList}
                         </ul>
                     </section>
