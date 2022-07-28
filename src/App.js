@@ -34,7 +34,7 @@ export const ThemeContext = createContext({
 
 const App = () => {
     // State to store data from API
-    const [ dodata, setDoData] = useState({});
+    const [ dodata, setDoData] = useState([]);
 
     // States and value to maintain and export context data
     const [ categoryId, setCategoryId ] = useState(0);
@@ -47,7 +47,8 @@ const App = () => {
         fetch('https://t-n9.github.io/domatio-api/domatio-data.json')
             .then(response => response.json())
             .then(data => {
-                setDoData(data.domatio);
+                setDoData(data);
+                console.log({data})
                 // document.querySelector('.loading-content').classList.add('visible-none');
             });
     },[])

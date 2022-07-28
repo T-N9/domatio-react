@@ -122,9 +122,7 @@ const SideBar = () => {
         setListToggle( prev => ({
             ...prev,
             [e] : !prev[e]
-        }))
-
-        console.log(listToggle)
+        }));
     }
 
     // Tag name list initialize form array

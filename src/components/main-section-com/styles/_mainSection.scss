@@ -133,7 +133,7 @@
         
         .cardSection {
             height: 100%;
-            max-height: calUni(340px);
+            min-height: calUni(340px);
             padding: calUni(15px);
             border-radius: 5px;
             box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -261,6 +261,7 @@
     
                 &--desc {
                     color: $clr-wah;
+
                 }
             }
         }

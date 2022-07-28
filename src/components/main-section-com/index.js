@@ -16,37 +16,39 @@ const MainSection = () => {
     const { categoryId, tagName } = useContext(CategoryTagContext);
     let headerText, bodyText;
 
+    console.log({data_list})
+
     // Hook for initialize cards whether filter by Tag name or without tag name
     useEffect(() => {
         function withoutTagCall() {
             categoryId === 0 ?
             setCardData(
-                Object.entries(data_list).map(data => {
+                data_list?.map(data => {
                     return (
                         <Card 
                             key = {nanoid()}
-                            name = {data[1].name}
-                            title = {data[1].title}
-                            image = {data[1].image}
-                            desc = {data[1].desc}
-                            link = {data[1].link}
-                            tags = {data[1].tags}
+                            name = {data.name}
+                            title = {data.title}
+                            image = {data.image}
+                            desc = {data.desc}
+                            link = {data.link}
+                            tags = {data.tags}
                         />
                     )
                 })
             )
             :
             setCardData(
-                Object.entries(data_list).filter(data => data[1].category.includes(categoryId)).map(data => {
+                data_list.filter(data => data.category.includes(categoryId)).map(data => {
                     return (
                         <Card 
                             key = {nanoid()}
-                            name = {data[1].name}
-                            title = {data[1].title}
-                            image = {data[1].image}
-                            desc = {data[1].desc}
-                            link = {data[1].link}
-                            tags = {data[1].tags}
+                            name = {data.name}
+                            title = {data.title}
+                            image = {data.image}
+                            desc = {data.desc}
+                            link = {data.link}
+                            tags = {data.tags}
                         />
                     )
                 })
@@ -56,32 +58,32 @@ const MainSection = () => {
         function tagFilterCall() {
             categoryId === 0 ?
             setCardData(
-                Object.entries(data_list).filter(data => data[1].tags.includes(tagName)).map(data => {
+                data_list.filter(data => data.tags.includes(tagName)).map(data => {
                     return (
                         <Card 
                             key = {nanoid()}
-                            name = {data[1].name}
-                            title = {data[1].title}
-                            image = {data[1].image}
-                            desc = {data[1].desc}
-                            link = {data[1].link}
-                            tags = {data[1].tags}
+                            name = {data.name}
+                            title = {data.title}
+                            image = {data.image}
+                            desc = {data.desc}
+                            link = {data.link}
+                            tags = {data.tags}
                         />
                     )
                 })
             )
             :
             setCardData(
-                Object.entries(data_list).filter(data => data[1].category.includes(categoryId) && data[1].tags.includes(tagName)).map(data => {
+                data_list.filter(data => data.category.includes(categoryId) && data.tags.includes(tagName)).map(data => {
                     return (
                         <Card 
                             key = {nanoid()}
-                            name = {data[1].name}
-                            title = {data[1].title}
-                            image = {data[1].image}
-                            desc = {data[1].desc}
-                            link = {data[1].link}
-                            tags = {data[1].tags}
+                            name = {data.name}
+                            title = {data.title}
+                            image = {data.image}
+                            desc = {data.desc}
+                            link = {data.link}
+                            tags = {data.tags}
                         />
                     )
                 })

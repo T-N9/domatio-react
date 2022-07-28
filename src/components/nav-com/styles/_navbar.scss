@@ -89,6 +89,19 @@
             margin: 0;
         }
 
+        .auto-complete {
+            list-style-type: none;
+            position: absolute;
+            top: calUni(40px);
+            left: 0;
+            
+            li {
+                background-color: $clr-bondi;
+                color: $clr-wah;
+                padding: 5px 10px;
+            }
+        }
+
         input {
             width: 100%;
             height: 100%;
@@ -185,6 +198,7 @@ input::-webkit-calendar-picker-indicator {
 .menuModal {
     
     &--wrapper {
+        overflow: auto;
         transition: all 200ms ease-in;
         position: fixed;
         width: 100%;
@@ -194,6 +208,10 @@ input::-webkit-calendar-picker-indicator {
         background-color: rgba($clr-dark, 0.8);
 
         @include flex-center;
+
+        @include m-breakpoint-down(small) {
+            align-items: flex-start;
+        }
 
         .modal {
             background-color: $clr-wah;
