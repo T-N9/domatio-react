@@ -75,7 +75,7 @@ const SideBar = () => {
     },
   ];
 
-  // Tag name List array
+  // Example Keywords
   const TagArray = [
     "free",
     "myanmar",
@@ -202,7 +202,7 @@ const SideBar = () => {
           <hr />
           <section className="sidebar--tag">
             <div className="sidebar--header">
-              <small className="section-name">Tags</small>
+              <small className="section-name">Example Keywords</small>
 
               <button
                 onClick={() => listToggler("tag")}
