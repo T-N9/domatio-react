@@ -79,13 +79,13 @@ const Card = (props) => {
         <div
           className="cardSection--image"
           style={
-            // props.image
-            //   ? { backgroundImage: `url(${props.image})` } :
-            gradientStyles[randomBgNum()]
+            props.image
+              ? { backgroundImage: `url(${props.image})` }
+              : gradientStyles[randomBgNum()]
           }
         >
-          {/* {!props.image && <h1 className="image-text">{props.name}</h1>} */}
-          <h1 className="image-text">{props.name}</h1>
+          {!props.image && <h1 className="image-text">{props.name}</h1>}
+          {/* <h1 className="image-text">{props.name}</h1> */}
           <small className="tags">
             {props.tags.map((tag) => {
               return tag;

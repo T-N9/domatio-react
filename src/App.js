@@ -84,36 +84,28 @@ const App = () => {
           </main>
           {/* Loading Content before main content */}
           <div className="loading-content">
-            <span className="loading-icon">
-              <div class="loadingio-spinner-spin-jxbic93zq6a">
-                <div class="ldio-be32j0phugq">
-                  <div>
-                    <div></div>
-                  </div>
-                  <div>
-                    <div></div>
-                  </div>
-                  <div>
-                    <div></div>
-                  </div>
-                  <div>
-                    <div></div>
-                  </div>
-                  <div>
-                    <div></div>
-                  </div>
-                  <div>
-                    <div></div>
-                  </div>
-                  <div>
-                    <div></div>
-                  </div>
-                  <div>
-                    <div></div>
-                  </div>
+            <div className="loadingio-spinner-spin-zvuwi6ogw3s">
+              <div className="ldio-svfroiph48k">
+                <div>
+                  <div></div>
+                </div>
+                <div>
+                  <div></div>
+                </div>
+                <div>
+                  <div></div>
+                </div>
+                <div>
+                  <div></div>
+                </div>
+                <div>
+                  <div></div>
+                </div>
+                <div>
+                  <div></div>
                 </div>
               </div>
-            </span>
+            </div>
           </div>
         </div>
       </DataContext.Provider>
