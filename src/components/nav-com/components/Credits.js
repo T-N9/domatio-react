@@ -41,7 +41,7 @@ const Credits = () => {
 
                     <h1>Developer and Designer</h1>
                     <div className="sub-informer">
-                        <a href="https://www.linkedin.com/in/te-nyain-moe-lwin-80b4a11a4/" target="_blank" rel="noreferrer">
+                        <a href="https://www.tenyain.com/" target="_blank" rel="noreferrer">
                             <code>
                                 Te Nyain Moe Lwin
                             </code>
