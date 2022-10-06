@@ -68,6 +68,8 @@
         background-color: rgba($clr-foam, 0.5);
         color: $clr-eastbay;
 
+
+
         .title {
             font-family: $font-heading;
             font-weight: 800;
@@ -102,12 +104,29 @@
             font-family: $font-heading;
             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
-            font-size: 0.6255rem;
-            background-color: $clr-trinidad;
-            color: $clr-wah;
-            padding: 5px 10px;
+            font-size: 0.8255rem;
+            background-color: $clr-wah;
+            border: 1px solid $clr-trinidad;
+            color: $clr-trinidad;
+            padding: 5px 20px;
             border-radius: 10px;
             animation: slide_left 200ms ease both;
+
+            .close-tag {
+                position: absolute;
+                background-color: white;
+                width: 30px;
+                height: 30px;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                border-radius: 500px;
+                color: red;
+                right: -10px;
+                top: -20px;
+            }
 
             @include m-breakpoint-down(small) {
                 font-size: 0.5rem;
