@@ -7,7 +7,6 @@ const MenuOption = () => {
 
     const menuClick = (name) => {
         setMenuContent(name);
-        console.log(name);
         setMenuToggle( prevToggle => !prevToggle);
     }
     return (

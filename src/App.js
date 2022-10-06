@@ -1,5 +1,4 @@
 import React, { useState, useEffect, createContext } from "react";
-import LineIcon from "react-lineicons";
 import { MainSection, NavBar, SideBar } from "./components";
 
 /* data */
@@ -61,8 +60,6 @@ const App = () => {
     //     });
     setDoData(domatio.domatio);
   }, []);
-
-  console.log({ dodata });
 
   return (
     <>
