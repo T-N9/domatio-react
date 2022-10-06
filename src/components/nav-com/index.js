@@ -1,5 +1,5 @@
 import React, {createContext, useState, useContext} from "react";
-import { ThemeContext } from "../../App";
+import { ThemeContext } from "../../hook.app";
 import logo from "../../images/domatio-logo.png";
 import darkLogo from "../../images/domatio-logo-dark.png";
 import TextForm from "./components/TextForm";

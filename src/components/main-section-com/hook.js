@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { nanoid } from "nanoid";
 
 /* Context */
-import { DataContext, CategoryTagContext } from "../../App";
+import { DataContext, CategoryTagContext } from "../../hook.app";
 
 /* Components */
 import Card from "./components/Card";

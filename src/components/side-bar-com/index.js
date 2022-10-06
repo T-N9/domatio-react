@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import LineIcon from "react-lineicons";
-import { CategoryTagContext } from "../../App";
+import { CategoryTagContext } from "../../hook.app";
 
 const SideBar = () => {
   // State for Toggle sidebar in small devices

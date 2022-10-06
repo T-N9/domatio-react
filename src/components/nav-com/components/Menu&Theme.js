@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import LineIcon from 'react-lineicons';
 import { searchContext } from "..";
-import { ThemeContext } from "../../../App";
+import { ThemeContext } from "../../../hook.app";
 import MenuOption from "./MenuOption";
 
 /* ==========================================
