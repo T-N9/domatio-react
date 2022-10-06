@@ -995,7 +995,6 @@ input::-webkit-calendar-picker-indicator {
 .mainSection .card-grid .cardSection {
   height: 100%;
   min-height: 21.25rem;
-  padding: 0.9375rem;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   transition: all 200ms ease-out;
@@ -1003,6 +1002,7 @@ input::-webkit-calendar-picker-indicator {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  overflow: hidden;
 }
 @media (max-width: 35.9375em) {
   .mainSection .card-grid .cardSection {
@@ -1020,7 +1020,7 @@ input::-webkit-calendar-picker-indicator {
   height: 200px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100%;
+  background-size: 115%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1048,12 +1048,15 @@ input::-webkit-calendar-picker-indicator {
   font-size: 1px;
   visibility: hidden;
 }
+.mainSection .card-grid .cardSection .info {
+  padding: 0.9375rem;
+}
 .mainSection .card-grid .cardSection:hover {
   transform: translateY(-5px);
   background-color: #C4FCF0;
 }
 .mainSection .card-grid .cardSection:hover .cardSection--image {
-  background-size: 112%;
+  background-size: 120%;
 }
 .mainSection .card-grid .cardSection--name {
   font-family: "Nunito", sans-serif;
@@ -1096,7 +1099,7 @@ input::-webkit-calendar-picker-indicator {
   background-color: #253a3d;
 }
 .dark .mainSection .card-grid .cardSection:hover {
-  background-color: #005C85;
+  background-color: #005c85;
 }
 .dark .mainSection .card-grid .cardSection--name {
   color: #8BE386;

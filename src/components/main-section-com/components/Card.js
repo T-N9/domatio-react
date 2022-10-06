@@ -92,7 +92,7 @@ const Card = (props) => {
             })}
           </small>
         </div>
-        <div>
+        <div className="info">
           <h1 className="cardSection--name">{props.name}</h1>
           {props.desc ? (
             <p className="cardSection--desc">{props.desc}</p>

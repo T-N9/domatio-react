@@ -1,294 +1,294 @@
 .loading-content {
-    position: fixed;
-    z-index: 6000;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $clr-wah;
-    color: $clr-trinidad;
-    font-size: 2.5rem;
-    transition: all 200ms ease;
+  position: fixed;
+  z-index: 6000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $clr-wah;
+  color: $clr-trinidad;
+  font-size: 2.5rem;
+  transition: all 200ms ease;
 
-    @include flex-center;
+  @include flex-center;
 
-    .loading-icon {
-        animation: spinning 1.5s linear infinite;
-    }
- 
+  .loading-icon {
+    animation: spinning 1.5s linear infinite;
+  }
 }
 
 .dark {
-    .loading-content {
-        background-color: $clr-dark; 
-    }
+  .loading-content {
+    background-color: $clr-dark;
+  }
 }
 
 .no-item-page {
-    @include flex-center;
-    padding: 2.5rem;
-    padding-top: 3rem;
-    flex-direction: column;
+  @include flex-center;
+  padding: 2.5rem;
+  padding-top: 3rem;
+  flex-direction: column;
 
-    h1 {
-        font-family: $font-heading;
-        color: $clr-eastbay;
-        font-weight: 700;
-        margin-bottom: -40px;
-        font-style: italic;
-        font-size: 2.125rem;
+  h1 {
+    font-family: $font-heading;
+    color: $clr-eastbay;
+    font-weight: 700;
+    margin-bottom: -40px;
+    font-style: italic;
+    font-size: 2.125rem;
+  }
+
+  img {
+    width: 30%;
+
+    @include m-breakpoint-down(small) {
+      width: 100%;
     }
-
-    img {
-        width: 30%;
-
-        @include m-breakpoint-down(small) {
-            width: 100%;
-        }
-    }
+  }
 }
 
 .mainSection {
-    width: 100%;
-    padding-left: calUni(220px);
-    padding-top: calUni(70px);
-    background-color: $clr-wah;
+  width: 100%;
+  padding-left: calUni(220px);
+  padding-top: calUni(70px);
+  background-color: $clr-wah;
 
-    @include m-breakpoint-down(large){
-        padding-left: 0;
-    }
-    
-    @include m-breakpoint-down(small){
-        padding-top: 3.5rem;
+  @include m-breakpoint-down(large) {
+    padding-left: 0;
+  }
+
+  @include m-breakpoint-down(small) {
+    padding-top: 3.5rem;
+  }
+
+  &--header {
+    position: relative;
+    padding: 0.655rem 0;
+    background-color: rgba($clr-foam, 0.5);
+    color: $clr-eastbay;
+
+    .title {
+      font-family: $font-heading;
+      font-weight: 800;
+
+      @include m-breakpoint-down(small) {
+        font-size: 1.2rem;
+        line-height: 1.2;
+      }
     }
 
-    &--header {
-        position: relative;
-        padding: 0.655rem 0;
-        background-color: rgba($clr-foam, 0.5);
+    .description {
+      color: #333;
+      width: 50%;
+
+      @include m-breakpoint-down(large) {
+        width: 70%;
+      }
+
+      @include m-breakpoint-down(small) {
+        width: 100%;
+        font-size: calUni(14px);
+      }
+    }
+
+    .tagboard {
+      display: inline-block;
+      position: absolute;
+      right: 20px;
+      bottom: -10px;
+      font-family: $font-heading;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+      font-size: 0.8255rem;
+      background-color: $clr-wah;
+      border: 1px solid $clr-trinidad;
+      color: $clr-trinidad;
+      padding: 5px 20px;
+      border-radius: 10px;
+      animation: slide_left 200ms ease both;
+
+      .close-tag {
+        position: absolute;
+        background-color: white;
+        width: 30px;
+        height: 30px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 500px;
+        color: red;
+        right: -10px;
+        top: -20px;
+      }
+
+      @include m-breakpoint-down(small) {
+        font-size: 0.5rem;
+        bottom: -10px;
+      }
+    }
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding-top: calUni(20px);
+    padding-bottom: calUni(20px);
+
+    @include m-breakpoint-down(large) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include m-breakpoint-down(small) {
+      grid-template-columns: repeat(1, 100%);
+    }
+
+    .cardSection {
+      height: 100%;
+      min-height: calUni(340px);
+      // padding: calUni(15px);
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+        rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      transition: all 200ms ease-out;
+      user-select: none;
+      overflow: hidden;
+
+      @include m-breakpoint-down(small) {
+        min-height: calUni(140px);
+        background-size: 100%;
+      }
+
+
+      &--content {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      &--image {
+        width: 100%;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 115%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: all 200ms ease;
+        margin-bottom: 0.75rem;
+
+        @include m-breakpoint-down(lmedium) {
+          height: 150px;
+        }
+
+        @include m-breakpoint-down(small) {
+          height: 120px;
+        }
+
+        .image-text {
+          color: $clr-wah;
+          text-align: center;
+          padding: 0 10px;
+          font-family: $font-writing;
+          // letter-spacing: 10px;
+        }
+
+        .tags {
+          position: absolute;
+          font-size: 1px;
+          visibility: hidden;
+        }
+      }
+
+      .info {
+        padding: calUni(15px);
+      }
+      &:hover {
+        transform: translateY(-5px);
+        background-color: $clr-foam;
+
+        .cardSection--image {
+          background-size: 120%;
+        }
+      }
+
+      &--name {
+        font-family: $font-heading;
         color: $clr-eastbay;
+      }
 
+      &--title {
+        font-family: $font-para;
+        font-weight: 400;
+        color: $clr-kabul;
+      }
 
-
-        .title {
-            font-family: $font-heading;
-            font-weight: 800;
-            
-
-            @include m-breakpoint-down(small) {
-                font-size:1.2rem;
-                line-height: 1.2;
-            }
-        }
-
-        .description {
-            color: #333;
-            width: 50%;
-
-
-            @include m-breakpoint-down(large) {
-                width: 70%;
-            }
-
-            @include m-breakpoint-down(small) {
-                width: 100%;
-                font-size: calUni(14px);
-            }
-        }
-
-        .tagboard {
-            display: inline-block;
-            position: absolute;
-            right: 20px;
-            bottom: -10px;
-            font-family: $font-heading;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-
-            font-size: 0.8255rem;
-            background-color: $clr-wah;
-            border: 1px solid $clr-trinidad;
-            color: $clr-trinidad;
-            padding: 5px 20px;
-            border-radius: 10px;
-            animation: slide_left 200ms ease both;
-
-            .close-tag {
-                position: absolute;
-                background-color: white;
-                width: 30px;
-                height: 30px;
-                font-weight: bold;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                cursor: pointer;
-                border-radius: 500px;
-                color: red;
-                right: -10px;
-                top: -20px;
-            }
-
-            @include m-breakpoint-down(small) {
-                font-size: 0.5rem;
-                bottom: -10px;
-            }
-        }
+      &--desc {
+        font-family: $font-para;
+        font-weight: 400;
+        color: $clr-kabul;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* number of lines to show */
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
     }
-
-    .card-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1rem;
-        padding-top: calUni(20px) ;
-        padding-bottom: calUni(20px) ;
-
-        @include m-breakpoint-down(large){
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        @include m-breakpoint-down(small){
-            grid-template-columns: repeat(1, 100%);
-        }
-        
-        .cardSection {
-            height: 100%;
-            min-height: calUni(340px);
-            padding: calUni(15px);
-            border-radius: 5px;
-            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-            transition: all 200ms ease-out;
-            user-select: none;
-
-            @include m-breakpoint-down(small) {
-                min-height: calUni(140px);
-                background-size: 100%;
-            }
-
-            &--content {
-                display: block;
-                width: 100%;
-                height: 100%;
-            }
-
-            &--image{
-                width: 100%;
-                height: 200px;
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-size: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                
-                transition: all 200ms ease;
-                margin-bottom: 0.75rem;
-
-                @include m-breakpoint-down(lmedium) {
-                    height: 150px;
-                }
-
-                @include m-breakpoint-down(small) {
-                    height: 120px;
-                }
-
-                .image-text {
-                    color: $clr-wah;
-                    text-align: center;
-                    padding: 0 10px;
-                    font-family: $font-writing;
-                    // letter-spacing: 10px;
-                }
-
-                .tags{
-                    position: absolute;
-                    font-size: 1px;
-                    visibility: hidden;
-                }
-            }
-
-            &:hover {
-                transform: translateY(-5px);
-                background-color: $clr-foam;
-
-                .cardSection--image {
-                    background-size: 112%;
-                }
-                
-            }
-
-            &--name {
-                font-family: $font-heading;
-                color: $clr-eastbay;
-            }
-
-            &--title {
-                font-family: $font-para;
-                font-weight: 400;
-                color: $clr-kabul;
-            }
-
-            &--desc {
-                font-family: $font-para;
-                font-weight: 400;
-                color: $clr-kabul;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 3; /* number of lines to show */
-                        line-clamp: 3; 
-                -webkit-box-orient: vertical;
-            }
-        }
-    }
+  }
 }
 
 .dark {
-    min-height: 100vh;
+  min-height: 100vh;
+  background-color: $clr-dark;
+  .mainSection {
     background-color: $clr-dark;
-    .mainSection {
-        background-color: $clr-dark;
 
-        &--header {
-            background-color: $clr-eastbay;
+    &--header {
+      background-color: $clr-eastbay;
 
-            .title {
-                color: $clr-pastel;
-            }
+      .title {
+        color: $clr-pastel;
+      }
 
-            .description {
-                color: $clr-wah;
-            }
-        }
-
-        .card-grid {
-            .cardSection {
-                background-color: #253a3d;
-                
-                &:hover {
-                    background-color: #005C85;
-                }
-
-                &--name {
-                    color: $clr-pastel;
-                }
-    
-                &--title {
-                    font-family: $font-para;
-                    font-weight: 400;
-                    color: $clr-wah;
-                }
-    
-                &--desc {
-                    color: $clr-wah;
-
-                }
-            }
-        }
+      .description {
+        color: $clr-wah;
+      }
     }
 
-    .no-item-page {
-        h1 {
-            color: $clr-pastel;
+    .card-grid {
+      .cardSection {
+        background-color: #253a3d;
+
+        &:hover {
+          background-color: #005c85;
         }
+
+        &--name {
+          color: $clr-pastel;
+        }
+
+        &--title {
+          font-family: $font-para;
+          font-weight: 400;
+          color: $clr-wah;
+        }
+
+        &--desc {
+          color: $clr-wah;
+        }
+      }
     }
+  }
+
+  .no-item-page {
+    h1 {
+      color: $clr-pastel;
+    }
+  }
 }
