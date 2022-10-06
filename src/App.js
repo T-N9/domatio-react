@@ -62,7 +62,7 @@ const App = () => {
     setDoData(domatio.domatio);
   }, []);
 
-  console.log({dodata})
+  console.log({ dodata });
 
   return (
     <>
@@ -85,7 +85,34 @@ const App = () => {
           {/* Loading Content before main content */}
           <div className="loading-content">
             <span className="loading-icon">
-              <LineIcon name="spinner" />
+              <div class="loadingio-spinner-spin-jxbic93zq6a">
+                <div class="ldio-be32j0phugq">
+                  <div>
+                    <div></div>
+                  </div>
+                  <div>
+                    <div></div>
+                  </div>
+                  <div>
+                    <div></div>
+                  </div>
+                  <div>
+                    <div></div>
+                  </div>
+                  <div>
+                    <div></div>
+                  </div>
+                  <div>
+                    <div></div>
+                  </div>
+                  <div>
+                    <div></div>
+                  </div>
+                  <div>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
             </span>
           </div>
         </div>
