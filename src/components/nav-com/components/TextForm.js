@@ -59,6 +59,7 @@ const TextForm = () => {
       }
       onSubmit={handleSubmit}
     >
+      <span className="overlay"></span>
       <label htmlFor="search-data" className="d-none">
         Search form
       </label>
