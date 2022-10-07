@@ -24,7 +24,7 @@ export const domatio = {
       name: "MDN Web Docs",
       category: [10],
       link: "https://developer.mozilla.org/",
-      image: "https://developer.mozilla.org/mdn-social-share.0ca9dbda.png",
+      image: "https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png",
       desc: "The MDN Web Docs site provides information about Open Web technologies including HTML, CSS, and APIs for both Web sites and progressive web apps.",
       tags: ["learning", "self-study", "documentation"],
     },
@@ -47,6 +47,7 @@ export const domatio = {
       name: "A Programmer",
       category: [10],
       link: "https://www.aprogrammer.blog/",
+      image: "https://www.aprogrammer.blog/images/web/logo.png",
       desc: "Welcome From A Programmer",
       tags: ["learning", "self-study", "blog", "myanmar", "course"],
     },
@@ -60,9 +61,18 @@ export const domatio = {
       tags: ["blog", "self-study", "documentation", "myanmar"],
     },
     {
+      name: "Creative Coder Myanmar",
+      category: [10],
+      link: "https://creativecodermm.com/",
+      image : "/assets/creative-coder-myanmar.png",
+      desc: "Programming နဲ့ပက်သက်ပြီး လမ်းပျောက်နေသော လူငယ်များတွက်  ရည်ရွယ်ထားသော Platform တခုဖြစ်ပါတယ်။",
+      tags: ["learning", "myanmar", "free", "course", "beginner", "laravel" , "vue"],
+    },
+    {
       name: "Tech Guru",
       category: [10],
       link: "https://mmtechguru.com/",
+      image : "https://mmtechguru.com/img/logo.svg",
       desc: "သင်တန်းကျောင်းတစ်ခုဖြစ်ပြီး Information Technology ဆိုင်ရာ နည်းပညာများဖြင့် IT Professional တစ်ယောက်အဖြစ် အသက်မွေး ဝမ်းကျောင်းပြုလိုသူများတွက် ကူညီလမ်းပြပေးနေသော သင်တန်း တစ်ခုပါ။",
       tags: ["learning", "self-study", "myanmar", "free", "course"],
     },
@@ -71,6 +81,7 @@ export const domatio = {
       title: "Ei Maung : Personal Profile",
       category: [10],
       link: "https://eimaung.com/",
+      image : "https://eimaung.com/img/pwd2022.png",
       desc: "Professional web developer since 2006. Co-founder of Fairway Technology, a software development and professional education service company. Currently working as Managing Partner and teaching web development courses.",
       tags: ["learning", "self-study", "myanmar", "books", "free"],
     },
@@ -254,7 +265,7 @@ export const domatio = {
         "loading.io - Your SVG + GIF + PNG Ajax Loading Icons and Animation Generator",
       category: [15],
       link: "https://loading.io/",
-      image: "https://loading.io/assets/img/thumbnail.jpg",
+      image: "/assets/thumbnail.jpg",
       desc: "Build Your Ajax Loading Icons, Animated Text and More with SVG / CSS / GIF / PNG !",
       tags: ["CSS", "animation", "design", "generator"],
     },
@@ -462,7 +473,7 @@ export const domatio = {
       title: "Coolors - The super fast color schemes generator!",
       category: [20],
       link: "https://coolors.co/",
-      image: "https://coolors.co/assets/img/og_image.png",
+      image: "/assets/coolors.png",
       desc: "Generate or browse beautiful color combinations for your designs.",
       keywords:
         "color scheme, scheme color, color schemes, color theme, color palette, color themes, color palettes, color combinations, color, colors, palettes, hex color wheel, pastel color palette, color wheel, color combination, color pallete, color names, web color schemes, color wheel generator, extract color palette from image, random color palette generator, color schemes generator, ui color palette generator, pretty colors, vintage color, color palette from image",
@@ -520,7 +531,6 @@ export const domatio = {
       title: "ColorSpark | Discover Unique Colors & Gradients.",
       category: [20],
       link: "https://colorspark.app/",
-      image: "https://colorspark.app/assets/img/share.jpg",
       desc: "A simple and effective tool that generates random colors and gradients to help designers put together unique and striking color palettes.",
       tags: [
         "color",
@@ -781,7 +791,7 @@ export const domatio = {
       name: "Who Can Use",
       category: [20],
       link: "https://whocanuse.com/",
-      image: "https://whocanuse.com/3cb0c517afe6a9a74b3853fccd8e881a.png",
+      image: "/assets/whocanuse_banner.png",
       desc: "Find out who can use your color combination. Whocanuse is a tool that brings attention and understanding to how color contrast can affect different people that have visual impairments.",
       keywords: "accessibility, color, contrast, tool",
       tags: ["color", "UI", "design", "accessibility"],
@@ -1000,8 +1010,6 @@ export const domatio = {
       title: "1001 Free Fonts | Download 60000 Fonts",
       category: [25],
       link: "https://www.1001freefonts.com/",
-      image:
-        "https://font-1001freefonts.netdna-ssl.com/themes/blue/images/main_logo.png",
       desc: "Download 60000 free fonts for Windows and Mac. Fonts are organized by categories such as calligraphy, handwriting, script, sans serif and more.",
       tags: ["font", "typography", "free"],
     },
@@ -1206,14 +1214,14 @@ export const domatio = {
         "SVG,font creation, icon,design,glyph,machine,gopher,typography,typeface,font face,icon font,iconic",
       tags: ["font", "typography", "SVG"],
     },
-    {
-      name: "Open Foundry",
-      category: [25],
-      link: "https://open-foundry.com/",
-      image: "http://open-foundry.com/img/of-cover-preview.jpg",
-      desc: "A new platform for open-source fonts in a noise-free environment, to highlight their beauty, extend functionality and encourage further exploration.",
-      tags: ["font", "typography", "open-source"],
-    },
+    // {
+    //   name: "Open Foundry",
+    //   category: [25],
+    //   link: "https://open-foundry.com/",
+    //   image: "http://open-foundry.com/img/of-cover-preview.jpg",
+    //   desc: "A new platform for open-source fonts in a noise-free environment, to highlight their beauty, extend functionality and encourage further exploration.",
+    //   tags: ["font", "typography", "open-source"],
+    // },
     {
       name: "Glyphter",
       title: "The SVG Font Machine | Glyphter",
@@ -1329,16 +1337,16 @@ export const domatio = {
       desc: "The only favicon generator you need for your next project. Quickly generate your favicon from text, image, or choose from hundreds of emojis.",
       tags: ["icon", "logo", "ico", "generator", "design", "emoji", "favicon"],
     },
-    {
-      name: "Favicon Icons",
-      title: "Favicon Icons – Free Vector Download, PNG, SVG, GIF",
-      category: [30],
-      link: "https://icons8.com/icons/set/favicon",
-      image:
-        "https://icons8.com/vue-static/landings/primary-landings/preview_icons8.png",
-      desc: "Free Favicon icons in various UI design styles for web and mobile. Download free static and animated Favicon vector icons in PNG, SVG, GIF formats",
-      tags: ["icon", "SVG", "favicon", "design"],
-    },
+    // {
+    //   name: "Favicon Icons",
+    //   title: "Favicon Icons – Free Vector Download, PNG, SVG, GIF",
+    //   category: [30],
+    //   link: "https://icons8.com/icons/set/favicon",
+    //   image:
+    //     "https://icons8.com/vue-static/landings/primary-landings/preview_icons8.png",
+    //   desc: "Free Favicon icons in various UI design styles for web and mobile. Download free static and animated Favicon vector icons in PNG, SVG, GIF formats",
+    //   tags: ["icon", "SVG", "favicon", "design"],
+    // },
     {
       name: "UX Wing",
       title: "Free icons for website with commercial use no attribution",
@@ -1405,7 +1413,7 @@ export const domatio = {
       title: "Icon Organizer & Icon Library",
       category: [30],
       link: "https://nucleoapp.com/",
-      image: "https://nucleoapp.com/assets/img/nucleo-3-open-graph.jpg",
+      image: "/assets/nucleo.jpg",
       desc: "Nucleo is a Mac/Windows app to organize, customize and export all your icons, and a library of 30000+ SVG icons.",
       keywords:
         "svg,icon,icons,vector,vector icons,svg icons,ios icons,android icons,icons app",
@@ -1586,7 +1594,7 @@ export const domatio = {
       category: [30],
       link: "https://lineicons.com/",
       image:
-        "https://cms.lineicons.com/wp-content/uploads/2021/05/lni-home.jpg",
+        "/assets/lni-home.jpg",
       desc: "5000+ Essential Line Icons, A Complete Yet Most Simplified Free Line Icon Pack of the Web - Available in WebFont, SVG, PNG, React, PNG, and PDF Files.",
       tags: ["icon", "SVG", "free", "premium", "design", "frontend"],
     },
@@ -1603,7 +1611,7 @@ export const domatio = {
       title: "SVG Repo - Free SVG Vectors and Icons",
       category: [30],
       link: "https://www.svgrepo.com/",
-      image: "https://www.svgrepo.com/img/logo.svg",
+      image: "/assets/svg-repo.png",
       desc: "Free Vectors and Icons in SVG format. ✅ Download free mono or multi color vectors for commercial use. Search in 300.000+ Free SVG Vectors and Icons.",
       tags: ["icon", "free", "SVG", "color", "vector"],
     },
@@ -1736,16 +1744,16 @@ export const domatio = {
       desc: "Create favicons using Font Awesome icons 🚀. Preview favicons live in browser 🖥️.",
       tags: ["icon", "generator", "favicon", "frontend", "font"],
     },
-    {
-      name: "Line Awesome",
-      title: "Line Awesome — Free Beautiful Icon Font",
-      category: [30],
-      link: "https://icons8.com/line-awesome",
-      image:
-        "https://icons8.com/line-awesome/vue-static/landings/line-awesome/preview_line-awesome.png",
-      desc: "Replace Font Awesome with modern line icons with a single line of code.",
-      tags: ["icon", "free", "generator", "design", "UI", "frontend"],
-    },
+    // {
+    //   name: "Line Awesome",
+    //   title: "Line Awesome — Free Beautiful Icon Font",
+    //   category: [30],
+    //   link: "https://icons8.com/line-awesome",
+    //   image:
+    //     "https://icons8.com/line-awesome/vue-static/landings/line-awesome/preview_line-awesome.png",
+    //   desc: "Replace Font Awesome with modern line icons with a single line of code.",
+    //   tags: ["icon", "free", "generator", "design", "UI", "frontend"],
+    // },
     {
       name: "Material Icons",
       title: "Google Fonts",
@@ -1790,10 +1798,18 @@ export const domatio = {
       title: "Boxicons : Premium web friendly icons for free",
       category: [30],
       link: "https://boxicons.com/",
-      image: "http://boxicons.com/static/img/og-image.png",
       desc: "Boxicons is a free collection of carefully crafted open source icons. Each icon is designed on a 24px grid with the material guidelines",
       keywords:
         "boxicons,free icons,open source icons, royalty free icons,google icons, icon, line icon, sharp icon, material icons, premium icons, pixel perfect icons, open source icons, free icon set",
+      tags: ["icon", "free", "premium", "UI", "design"],
+    },
+
+    {
+      name: "Atomicons",
+      category: [30],
+      link: "https://atomicons.com/",
+      image:"http://atomicons.com/preview.png",
+      desc: "Simple &amp; Beautiful customizable icons which you can personalise for your project",
       tags: ["icon", "free", "premium", "UI", "design"],
     },
     {
@@ -1854,7 +1870,7 @@ export const domatio = {
       title: "Jam icons / 890+ pixel perfect icons",
       category: [30],
       link: "https://jam-icons.com/",
-      image: "https://jam-icons.com/img/jam-large.jpg",
+      image: "/assets/jamicons.png",
       desc: "890+ handcrafted SVG icons to make your web app awesome.",
       tags: ["icon", "UI", "design", "frontend", "free", "SVG"],
     },
@@ -2380,7 +2396,7 @@ export const domatio = {
       category: [40],
       link: "https://products.ls.graphics/paaatterns/",
       image:
-        "https://ls-data.sfo2.digitaloceanspaces.com/_inner_use/OG/paaatttern.jpg",
+        "/assets/paaatterns.png",
       desc: "Free collection of beautiful patterns for all vector formats",
       tags: [
         "illustration",
@@ -2413,7 +2429,7 @@ export const domatio = {
       title: "Absurd Design - Free Surrealist Illustrations and Vector Art",
       category: [40],
       link: "https://absurd.design/",
-      image: "https://absurd.design/assets/img/social.jpg",
+      image: "/assets/social.jpg",
       desc: "Download surrealist illustrations. Use free vector art for your landing pages, presentations and apps. These artworks combine the absurdity and childishness.",
       tags: ["illustration", "art", "vector", "sketch", "free", "UI"],
     },
@@ -2432,7 +2448,7 @@ export const domatio = {
         "Free to Use Clip Art Images &amp; Vector Illustrations | ManyPixels",
       category: [40],
       link: "https://www.manypixels.co/gallery",
-      image: "https://www.manypixels.co/Illustrations Gallery Thumbnails.png",
+      image: "/assets/IllustrationsGalleryThumbnails.png",
       desc: "Download our 2,000+ editable and royalty-free SVG and PNG illustrations to power up your designs.",
       tags: [
         "illustration",
@@ -2643,7 +2659,7 @@ export const domatio = {
         "Freebbble | Download free, high quality design resources from Dribbble",
       category: [40],
       link: "http://freebbble.com/",
-      image: "https://s0.wp.com/i/blank.jpg",
+      image: "/assets/freebbble.png",
       desc: "Download free, high quality design resources from Dribbble",
       tags: ["illustration", "free", "vector", "graphic design"],
     },
@@ -2748,7 +2764,7 @@ export const domatio = {
       category: [40],
       link: "https://delesign.com/free-designs/graphics",
       image:
-        "https://delesign.com/free-designs/graphics/public/images/delesign-opengraph.png",
+        "/assets/delesign-opengraph.png",
       tags: [
         "illustration",
         "graphic design",
@@ -2806,7 +2822,7 @@ export const domatio = {
       category: [40],
       link: "https://svgwave.in/",
       image:
-        "https://svgwave.in/images/29cf875dd59e3301be675929e0ea67a8-3-01.svg",
+        "/assets/svgwave.png",
       desc: "SVG Wave is a minimal svg wave generator with lot of customization. It lets you abiltiy to generate and export pngs and svgs of beautiful waves. SVG wave also lets you layer multiple waves. Create SVGs for your website designs.",
 
       tags: [
@@ -2937,7 +2953,7 @@ export const domatio = {
       title: "Pixel Game: A Pixels Test to Quiz Your Knowledge | Pixactly",
       category: [50],
       link: "https://www.pixact.ly/",
-      image: "http://www.pixact.ly/img/unicorn.jpg",
+      image: "/assets/pixact.png",
       desc: "Pixactly is an online tool that tests how well you know your pixels. Try it for yourself! #pixactly",
       keywords:
         "pixel game, pixel tool, pixel quiz, pixel test, pixactly, pixel, game, perfect, web design, digital",
@@ -2957,7 +2973,7 @@ export const domatio = {
       title: "Screeps - MMO strategy sandbox game for programmers",
       category: [50],
       link: "https://screeps.com/",
-      image: "https://screeps.com/img/teaser.png",
+      image: "/assets/screeps.png",
       desc: "A strategy sandbox MMO game with a persistent open world where you play by writing JavaScripts to control your units. They live within the game and operate autonomously even while you are offline!",
       tags: ["games", "programming", "skill", "development", "javascript"],
     },
@@ -3174,17 +3190,6 @@ export const domatio = {
       tags: ["image", "photo", "photography", "graphic design", "free"],
     },
     {
-      name: "Picspree",
-      title:
-        "Free Stock Photos, Images, Illustrations &amp; Vectors for any use |",
-      category: [45],
-      link: "https://picspree.com/",
-      image:
-        "https://picspree.com/packs/media/theme/images/picspree-logo-73d94e251497f92495e327ac84d4d608.jpg",
-      desc: "Download free images, illustrations, vectors and icons at Picspree. Easy and fast. No attribution or sign up required. Free stock photos for commercial use in any project.",
-      tags: ["image", "photography", "photo", "free"],
-    },
-    {
       name: "Burst",
       title:
         "Free Stock Photos: High-Res Images for Websites &amp; Commercial Use",
@@ -3262,18 +3267,18 @@ export const domatio = {
         "home, public domain, pictures, free, images, royalty, stock, photos",
       tags: ["image", "photography", "photo", "free"],
     },
-    {
-      name: "Find a Photo",
-      title:
-        "FindA.Photo: 10,000 completely free stock photos to use for any purpose",
-      category: [45],
-      link: "https://www.chamberofcommerce.org/findaphoto/",
-      image: "http://finda.photo/img/marketing/header.jpg",
-      desc: "10,000 completely free stock photos from Unsplash, Jay Mantri, and many more, to use for any purpose. Search and browse by keyword and color.",
-      keywords:
-        "free stock images, free stock photos, stock photos, stock photography, free images, free photos, cc0 images, unsplash, jay mantri, skitterphoto, life of pix, picography, mmt",
-      tags: ["image", "free", "graphic design", "photography"],
-    },
+    // {
+    //   name: "Find a Photo",
+    //   title:
+    //     "FindA.Photo: 10,000 completely free stock photos to use for any purpose",
+    //   category: [45],
+    //   link: "https://www.chamberofcommerce.org/findaphoto/",
+    //   image: "http://finda.photo/img/marketing/header.jpg",
+    //   desc: "10,000 completely free stock photos from Unsplash, Jay Mantri, and many more, to use for any purpose. Search and browse by keyword and color.",
+    //   keywords:
+    //     "free stock images, free stock photos, stock photos, stock photography, free images, free photos, cc0 images, unsplash, jay mantri, skitterphoto, life of pix, picography, mmt",
+    //   tags: ["image", "free", "graphic design", "photography"],
+    // },
     {
       name: "Stockvault",
       title: "Stockvault | Free Stock Photos",
@@ -3310,7 +3315,7 @@ export const domatio = {
       category: [45],
       link: "https://negativespace.co/",
       image:
-        "https://negativespace.co/wp-content/uploads/2017/04/negspace-social.jpg",
+        "/assets/negspace-social.jpg",
       desc: "Whether for personal or commercial use, all of our beautiful high-resolution stock images are completely free to use in your projects.",
       tags: ["image", "photo", "photography", "UI", "hd", "graphic design"],
     },
@@ -3330,7 +3335,7 @@ export const domatio = {
       category: [45],
       link: "https://picography.co/",
       image:
-        "https://picography.co/wp-content/uploads/2021/12/picography-snowy-peaks-from-aircraft-window-600x400.jpg",
+        "/assets/picography.png",
       desc: "Gorgeous high-resolution free photos. Our free stock photos can be used for any project. No attribution, all CC0 free images.",
       tags: ["image", "free", "graphic design", "photography", "photo"],
     },
@@ -3339,8 +3344,6 @@ export const domatio = {
       title: "Wunderstock: Free Photos for Everyone",
       category: [45],
       link: "https://wunderstock.com/",
-      image:
-        "https://images.wunderstock.com/An-Abstract-Texture-in-Light-Brown-And-Blue-Tree-Bark_rFBVh2Rk0uFm_400.jpeg",
       desc: "Wunderstock is a free stock photo website with millions of beautiful free images. Check it out to find photos for your next project.",
       tags: ["image", "photography", "photo", "free"],
     },
@@ -3417,6 +3420,7 @@ export const domatio = {
         "Explore over 300,000 free stock photos and royalty free images - FreeImages.com",
       category: [45],
       link: "https://www.freeimages.com/",
+      image : "./assets/freeimages.png",
       desc: "Browse over 300,000 free stock photos and find the perfect royalty-free image quickly. Download free, high quality stock images, for every day or commercial use. No purchase required.",
       tags: ["image", "hd", "photo", "photography", "graphic design"],
     },
@@ -3462,7 +3466,7 @@ export const domatio = {
       category: [45],
       link: "https://creativecommons.org/",
       image:
-        "https://d15omoko64skxi.cloudfront.net/wp-content/uploads/2021/05/Website-Banner-Image-Option-1.png",
+        "/assets/creativecommons.png",
       desc: "Creative Commons is turning 20! We&#8217;re celebrating with a special Better Sharing campaign, honoring 20 years of commitment to open access and better sharing. We invite you to join us. Our goal is to raise $15 million in support.  20 Years: Better Sharing, Brighter Future",
       tags: ["image", "photo", "photography", "community"],
     },
