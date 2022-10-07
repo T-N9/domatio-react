@@ -3466,5 +3466,15 @@ export const domatio = {
       desc: "Creative Commons is turning 20! We&#8217;re celebrating with a special Better Sharing campaign, honoring 20 years of commitment to open access and better sharing. We invite you to join us. Our goal is to raise $15 million in support.  20 Years: Better Sharing, Brighter Future",
       tags: ["image", "photo", "photography", "community"],
     },
+    {
+      name: "Scrimba",
+      title: "Learn to Code with Interactive Tutorials - Scrimba.com",
+      category: [55],
+      link: "https://scrimba.com/",
+      image:
+        "https://scrimba.com/static/art/scrimba-og-image.png",
+      desc: "Scrimba is a fun and fast way of learning to code! Our interactive courses and tutorials will teach you React, Vue, Angular, JavaScript, HTML, CSS, and more.",
+      tags: ["community", "learning", "programming", "developing", "frontend", "beginner", "javascript"],
+    },
   ],
 };
