@@ -1062,8 +1062,8 @@ export const domatio = {
       name: "ZINBO",
       title: "ZINBO",
       category: [25],
-      image:
-        "/assets/zinbo.jpg",
+      image: "/assets/zinbo.jpg",
+      link: "https://www.facebook.com/profile.php?id=100076104782520",
       tags: [
         "font",
         "typography",
