@@ -24,13 +24,11 @@ Firstly, I prepared and collected data from various websites to build a resource
 
 ![enter image description here](https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/310784855_1785081451890629_1791035573390237958_n.jpg?stp=dst-jpg_p180x540&_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=2m9LYnd-l0sAX9St3xJ&tn=BU8lZJQk3yg7j3Hy&_nc_ht=scontent-sin6-2.xx&oh=00_AT-uAWAaLYwkObRRQqyJ2CTC1To2D46C-IUdSj61HS-3jA&oe=63430BCE)
 
-***Myanmar Version***
+ ## ***Myanmar Version***
 
 Hello, developers and designers ... ![😃️](https://static.xx.fbcdn.net/images/emoji.php/v9/t51/1/16/1f603.png)
 
 ဒီနေ့ ကျွန်တော့်ရဲ့ Domatio လို့ခေါ်တဲ့ website လေးနဲ့ မိတ်ဆက်ပေးချင်ပါတယ်။
-
-[https://domatio.vercel.app/](https://domatio.vercel.app/?fbclid=IwAR254eol_dI6AWK0eRzyaDLgmCeq90kRQpt3JcQtonTyx3kXs53H4YCoMKM)
 
 အရင်ဆုံးအနေနဲ့ Domatio δωμάτιο (do̱mátio) ဆိုတာက Greek ဘာသာစကားကဖြစ်ပြီး "Room", "အခန်း"လို့ အနက် အဓိပ္ပာယ်ရပါတယ်။ အခု project အရဆိုရင်
 
@@ -66,10 +64,24 @@ Dataအတွက်ကို CMSမသုံးထားဘဲ json fileနဲ�
 
 ဖတ်ရှုပေးလို့ ကျေးဇူးတင်ပါတယ်။![😊](https://static.xx.fbcdn.net/images/emoji.php/v9/t7f/1/16/1f60a.png)
 
-GitHub repo - [https://github.com/T-N9/domatio-react](https://l.facebook.com/l.php?u=https%3A%2F%2Fgithub.com%2FT-N9%2Fdomatio-react%3Ffbclid%3DIwAR1nEVTyr2eGAQckwb3Wk_jiaVDuaYyb5ZRzEBvnMW49kITE45ZmSoKxFjA&h=AT0G-rrx6wplxYfqWB25Z9LUHoLeTz5-zpoWwXQrbB8lkndn6WBnp7pw4W2CKZjAEAj99KywuTLqVZBWDXexzfZ-tgqTy1HNKpOuOCgvJsPMcE_auMd3cV5G7N7opb3RiDCMwh1W-Qg1&__tn__=-UK-R&c[0]=AT0RAsMX0zXk5cIuGF6h-eV74Z1fR13Rvjj3ZqpkgHbUJDax6oO3CC3ci5R5OokiaCHJeLjreZKh3iCyhUfNVRTKbBR44eHSTsKGRRVEKTVAU8fv6-pTt6YmrDyAF6DbW6lEV5n6WNOTbBgpdzMLrVQJpg)
+## ***English Version***
+First of all, Domatio δωμάτιο (do̱mátio) is derived from Greek and it is "Room" in English. According to this project, Domatio is a room of valuable resources for developers, programmers, and UIUX designers.
 
-Live -
+🔸The main feature of this project is collecting websites and resources into categories. You can search for websites in collections so that you will find your desired and appropriate website in a short time.
 
-[https://domatio.vercel.app/](https://domatio.vercel.app/?fbclid=IwAR2scBFcx_Nb8h68J8oUkNfg5Jw0JlUvOcei3VseDj5DKT63SR8lWdaHnbo)
+🔸A search box is a significant role in this project which has a feature for keyword searching. For example, if you search for "programming", the result will be related to the keyword "programming". If you are designing a webpage and it comes to adding a background image or texture, you can just type "background" and there will be some resources for backgrounds.
 
-[#domatio](https://www.facebook.com/hashtag/domatio?__eep__=6&__cft__[0]=AZVtwErSW4eF9msNDsBpvL9zvfsHSAe_1Ch1iCQMRyV5tZb2DkyI1vBqL4SDL2k42lb8TLL83qkeBhHHE08ShzAzUbnvDS0zFjApBGGLY8D7doIErqaed3kaXrPWCquyxpM&__tn__=*NK-R) [#website](https://www.facebook.com/hashtag/website?__eep__=6&__cft__[0]=AZVtwErSW4eF9msNDsBpvL9zvfsHSAe_1Ch1iCQMRyV5tZb2DkyI1vBqL4SDL2k42lb8TLL83qkeBhHHE08ShzAzUbnvDS0zFjApBGGLY8D7doIErqaed3kaXrPWCquyxpM&__tn__=*NK-R) [#webdevelopment](https://www.facebook.com/hashtag/webdevelopment?__eep__=6&__cft__[0]=AZVtwErSW4eF9msNDsBpvL9zvfsHSAe_1Ch1iCQMRyV5tZb2DkyI1vBqL4SDL2k42lb8TLL83qkeBhHHE08ShzAzUbnvDS0zFjApBGGLY8D7doIErqaed3kaXrPWCquyxpM&__tn__=*NK-R) [#reactjs](https://www.facebook.com/hashtag/reactjs?__eep__=6&__cft__[0]=AZVtwErSW4eF9msNDsBpvL9zvfsHSAe_1Ch1iCQMRyV5tZb2DkyI1vBqL4SDL2k42lb8TLL83qkeBhHHE08ShzAzUbnvDS0zFjApBGGLY8D7doIErqaed3kaXrPWCquyxpM&__tn__=*NK-R) [#resources](https://www.facebook.com/hashtag/resources?__eep__=6&__cft__[0]=AZVtwErSW4eF9msNDsBpvL9zvfsHSAe_1Ch1iCQMRyV5tZb2DkyI1vBqL4SDL2k42lb8TLL83qkeBhHHE08ShzAzUbnvDS0zFjApBGGLY8D7doIErqaed3kaXrPWCquyxpM&__tn__=*NK-R)
+🔸The target audience of this project is including Myanmar, you can see some local resources and staff. Technologies and concepts used in this project are simple since it was intended to build a lightweight project when I started learning React.js.
+
+🔸Domatio is a reboot version of WebToolsRoom https://lnkd.in/ghHjGgq8 (a project built in 2020) and I developed it in late 2021. Due to some situations, now I got a chance to present it in front of you.
+
+🔸For data maintenance, I use only a JSON file and manually enter the data. Data entry is the most time-consuming part of this project. I care about every resource being in a right place to help reduce user time on website hunting. I might use a CMS to maintain the data in the future.
+
+➡️ React, Context and SCSS are the techs of Domatio.
+
+🔸From the users' perspective, I would recommend using the website on large screens like laptops and desktops for more content to be displayed. You may think it has a weak point on the mobile screens cause of less data presentation.
+
+I have a plan for adding more data and if you have any suggestions for data and categories, feel free to contact me.
+
+Thank you for your time.
+
